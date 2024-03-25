@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> ระบบ CLMV </title>
+	<link rel="icon" type="image/x-icon" href="https://clmv.servicesaes.com/favicon.ico">
+	<link href="css/bootstrap.min.css" rel="stylesheet"> 
+	<link href="css/main.css" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> 
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>  
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" /> 
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>  
+ 
+
+
+</head>
+<body> 
+    <div id="root">
+        <div class="w-100 min-vh-100 fade-in">
+            <div>
+                <div class="w-100 px-0 position-fixed d-flex justify-content-between bg-primary shadow px-4 py-2 body" style="height: 60px; z-index: 1010;">
+                    <div class="d-flex align-items-center">
+                        <label class="d-block d-lg-none d-xl-none me-3"><span class="icon text-white text-18 pointer"></span></label>
+                        <div class="d-none d-sm-none d-md-flex d-lg-flex d-xl-flex text-white">
+                            <small>หน้าหลัก</small>
+                            <small class="ms-2"> &gt; การตั้งค่า </small>
+                            <small class="ms-2"></small>
+                            <small class="ms-2"> &gt; รายชื่อสำนักงานจัดหางาน </small> 
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-center">
+                        <div class="ps-3"><span class="me-2 align-items-center d-none d-sm-flex d-md-flex d-lg-flex d-xl-flex text-white">John Doe</span><small class="me-2 align-items-center d-none d-sm-flex d-md-flex d-lg-flex d-xl-flex text-white">admin_system@gmail.com</small></div>
+                        <div class="wpx-40 hpx-40 rounded-circle bg-secondary"><img src="https://clmv.servicesaes.com/static/media/logo.bc9cec12c29fa740a3ed.png" style="width: 40px;"></div>
+                        <div class="dropdowns">
+                            <span class="dropbtns pointer"><label class="icon text-18 p-2 text-white"><i class="fal fa-chevron-down"></i></label></span>
+                            <div class="dropdowns-content wpx-250 bg-white"><a class="pointer"><label class="icon mx-2"><i class="fal fa-sign-out-alt"></i></label>ออกจากระบบ</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pro-sidebar full-screen pt-0 lg toggled">
+                    <div class="pro-sidebar-inner">
+                        <div class="pro-sidebar-layout">
+                            <div class="d-flex justify-content-center pt-2"><img src="https://clmv.servicesaes.com/static/media/logo.bc9cec12c29fa740a3ed.png" style="width: 170px;"></div>
+                            <div class="w-100 text-center mb-3"><small class="text-secondary">V.1.0.5</small></div>
+                           <nav class="pro-menu overflow-scroll none-scroll sidebar-h">
+                                <ul>  
+                                    <li class="pro-menu-item">
+                                        <div class="pro-inner-item" tabindex="0" role="button"><span class="pro-icon-wrapper"><span class="pro-icon"><i class="fal fa-file-alt"></i></span></span><span class="pro-item-content"><a href="index.html">รายการรับเรื่องทั้งหมด
+                                        </a></span></div>
+                                    </li>
+                                    <li class="pro-menu-item">
+                                        <div class="pro-inner-item" tabindex="0" role="button">
+                                            <span class="pro-icon-wrapper">
+                                                <span class="pro-icon">
+                                                    <i class="fal fa-file-alt"></i>
+                                                </span>
+                                            </span>
+                                            <span class="pro-item-content">
+                                                <a href="waiting.html">รายการรอยื่น <p>5</p></a>
+                                            </span>
+                                        </div>
+                                    </li> 
+                                    <li class="pro-menu-item ">
+                                        <div class="pro-inner-item" tabindex="0" role="button"><span class="pro-icon-wrapper"><span class="pro-icon"><i class="fal fa-file-alt"></i></span></span><span class="pro-item-content"><a href="quotations.html">ใบเสนอราคา</a></span></div>
+                                    </li>  
+                                    <li class="pro-menu-item">
+                                        <div class="pro-inner-item" tabindex="0" role="button"><span class="pro-icon-wrapper"><span class="pro-icon"><i class="fal fa-file-alt"></i></span></span><span class="pro-item-content"><a href="invoice-list.html">รายการใบแจ้งหนี้
+                                        </a></span></div>
+                                    </li> 
+                                    <li class="pro-menu-item">
+                                        <div class="pro-inner-item" tabindex="0" role="button"><span class="pro-icon-wrapper"><span class="pro-icon"><i class="fal fa-file-alt"></i></span></span><span class="pro-item-content"><a href="receipt-list.html">รายการใบเสร็จ
+                                        </a></span></div>
+                                    </li>
+                                    <li class="pro-menu-item">
+                                        <div class="pro-inner-item" tabindex="0" role="button"><span class="pro-icon-wrapper"><span class="pro-icon"><i class="fal fa-file-alt"></i></span></span><span class="pro-item-content"><a href="billing-note.html">Billing Note
+                                        </a></span></div>
+                                    </li> 
+                                    <li class="pro-menu-item">
+                                        <div class="pro-inner-item" tabindex="0" role="button"><span class="pro-icon-wrapper"><span class="pro-icon"><i class="fal fa-file-alt"></i></span></span><span class="pro-item-content"><a href="qc-list.html">รายการ QC
+                                        </a></span></div>
+                                    </li>
+                                    <li class="pro-menu-item">
+                                        <div class="pro-inner-item" tabindex="0" role="button"><span class="pro-icon-wrapper"><span class="pro-icon"><i class="fal fa-file-alt"></i></span></span><span class="pro-item-content"><a href="lms.html">ระบบ LMS</a></span></div>
+                                    </li>
+                                    <li class="pro-menu-item ">
+                                        <div class="pro-inner-item" tabindex="0" role="button"><span class="pro-icon-wrapper"><span class="pro-icon"><i class="fal fa-user"></i></span></span><span class="pro-item-content"><a href="employer-list.html">ทะเบียนนายจ้าง</a></span></div>
+                                    </li>
+                                    <li class="pro-menu-item">
+                                        <div class="pro-inner-item" tabindex="0" role="button"><span class="pro-icon-wrapper"><span class="pro-icon"><i class="fal fa-file-alt"></i></span></span><span class="pro-item-content"><a href="worker-list.html">ทะเบียนลูกจ้าง</a></span></div>
+                                    </li>
+                                    
+                                    <li class="pro-menu-item">
+                                        <div class="pro-inner-item" tabindex="0" role="button"><span class="pro-icon-wrapper"><span class="pro-icon"><i class="fal fa-user-tie"></i></span></span><span class="pro-item-content"><a href="sales-list.html">ฝ่ายการขาย</a></span></div>
+                                    </li>
+                                    <li class="pro-menu-item">
+                                        <div class="pro-inner-item" tabindex="0" role="button"><span class="pro-icon-wrapper"><span class="pro-icon"><i class="fal fa-user-tie"></i></span></span><span class="pro-item-content"><a href="quotations-requests.html">ตัวแทน</a></span></div>
+                                    </li>
+                                    <li class="pro-menu-item">
+                                        <div class="pro-inner-item" tabindex="0" role="button">
+                                            <span class="pro-icon-wrapper">
+                                                <span class="pro-icon"><i class="fal fa-file-alt"></i></span>
+                                            </span>
+                                            <span class="pro-item-content"><a href="#">รายงาน</a></span>
+                                        </div> 
+                                        <ul>  
+                                            <li class="pro-menu-item">
+                                                <div class="pro-inner-item"> 
+                                                    <a href="report1.html">รายงานแจ้งเตือนหมดอายุ </a>
+                                                </div>
+                                            </li> 
+                                            <li class="pro-menu-item">
+                                                <div class="pro-inner-item"> 
+                                                    <a href="report-mou.html">สรุปนำเข้าแรงงาน MOU ประจำเดือน </a>
+                                                </div>
+                                            </li> 
+                                            <!-- <li class="pro-menu-item">
+                                                <div class="pro-inner-item"> 
+                                                    <a href="report.html">รายงาน</a>
+                                                </div>
+                                            </li>  -->
+                                        </ul>  
+                                    </li>
+                                    <!--  <li class="pro-menu-item">
+                                        <div class="pro-inner-item" tabindex="0" role="button"><span class="pro-icon-wrapper"><span class="pro-icon"><i class="fal fa-file-alt"></i></span></span><span class="pro-item-content"><a href="planning.html">Planning</a></span></div>
+                                    </li> -->
+                                    <!-- <li class="pro-menu-item">
+                                        <div class="pro-inner-item" tabindex="0" role="button"><span class="pro-icon-wrapper"><span class="pro-icon"><i class="fal fa-download"></i></span></span><span class="pro-item-content"><a href="#">ดาวน์โหลดไฟล์</a></span></div>
+                                    </li> -->
+                                    <li class="pro-menu-item active">
+                                        <div class="pro-inner-item" tabindex="0" role="button">
+                                            <span class="pro-icon-wrapper">
+                                                <span class="pro-icon"><i class="fal fa-cog"></i></span>
+                                            </span>
+                                            <span class="pro-item-content"><a href="#">การตั้งค่า</a></span>
+                                        </div> 
+                                        <ul>   
+                                            <li class="pro-menu-item">
+                                                <div class="pro-inner-item"> 
+                                                    <a href="profile.html">จัดการบัญชีระบบ</a>
+                                                </div>
+                                            </li>    
+                                            <li class="pro-menu-item">
+                                                <div class="pro-inner-item"> 
+                                                    <a href="menu-work.html">จัดการเมนูรายการรับเรื่อง</a>
+                                                </div>
+                                            </li>  
+                                             
+                                            <li class="pro-menu-item">
+                                                <div class="pro-inner-item"> 
+                                                    <a href="expiration-notification.html">การแจ้งเตือนหมดอายุเอกสาร</a>
+                                                </div>
+                                            </li>  
+                                           <li class="pro-menu-item">
+                                                <div class="pro-inner-item"> 
+                                                    <a href="issue-number.html">การออกเลขเรื่อง</a>
+                                                </div>
+                                            </li>   
+                                            <!-- <li class="pro-menu-item">
+                                                <div class="pro-inner-item"> 
+                                                    <a href="doc-number.html">การออกเลขเอกสาร</a>
+                                                </div>
+                                            </li> -->   
+                                            <li class="pro-menu-item">
+                                                <div class="pro-inner-item"> 
+                                                    <a href="lms-list.html">จัดการระบบ LMS</a>
+                                                </div>
+                                            </li>
+                                            <li class="pro-menu-item">
+                                                <div class="pro-inner-item"> 
+                                                    <a href="lms-category.html">จัดการหมวดหมู่ระบบ LMS</a>
+                                                </div>
+                                            </li>
+                                            <!-- <li class="pro-menu-item">
+                                                <div class="pro-inner-item"> 
+                                                    <a href="manage-quotations.html">จัดการใบเสนอราคา</a>
+                                                </div>
+                                            </li>  -->
+                                            <li class="pro-menu-item">
+                                                <div class="pro-inner-item"> 
+                                                    <a href="service-types.html">จัดการประเภทบริการ</a>
+                                                </div>
+                                            </li>
+                                            <li class="pro-menu-item">
+                                                <div class="pro-inner-item"> 
+                                                    <a href="service-price.html">จัดการอัตราค่าบริการ</a>
+                                                </div>
+                                            </li>
+                                            <li class="pro-menu-item active">
+                                                <div class="pro-inner-item"> 
+                                                    <a href="employment.html">รายชื่อสำนักงานจัดหางาน</a>
+                                                </div>
+                                            </li>
+                                            <li class="pro-menu-item">
+                                                <div class="pro-inner-item"> 
+                                                    <a href="document.html">ชื่อเอกสาร</a>
+                                                </div>
+                                            </li>
+                                            <li class="pro-menu-item">
+                                                <div class="pro-inner-item"> 
+                                                    <a href="delivery.html">การส่งเอกสาร</a>
+                                                </div>
+                                            </li>
+                                            <li class="pro-menu-item">
+                                                <div class="pro-inner-item"> 
+                                                    <a href="bank-account.html">บัญชีธนาคาร</a>
+                                                </div>
+                                            </li>
+                                            <li class="pro-menu-item">
+                                                <div class="pro-inner-item"> 
+                                                    <a href="title-header.html">หัวกระดาษ</a>
+                                                </div>
+                                            </li>
+                                        </ul>  
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="overlay" role="button" tabindex="0" aria-label="overlay"></div>
+                </div>
+            </div>
+            <div class="body bg-light min-vh-100">
+                <div class="p-3"> 
+
+                    <div class="d-flex mx-0 align-items-center justify-content-between test mb-3">
+                        <h3 class="mb-3"><b>รายชื่อสำนักงานจัดหางาน</b></h3>
+                        <div class="d-flex">
+                            <button data-bs-toggle="modal" data-bs-target="#myModal" class="btn btn-primary mx-1 update pt-2"><label class="icon">+</label> เพิ่ม</button>
+                        </div>
+                    </div>
+
+                    <div class="modal fade" id="myModal">
+                        <div class="modal-dialog modal-dialog-centered modal-md" style="min-width: 650px;">
+                            <div class="modal-content"> 
+                                <div class="modal-header">
+                                    <h4 class="modal-title">เพิ่มสำนักงานจัดหางาน</h4>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                </div> 
+                                <div class="modal-body">
+                                    <div class="row mt-3"> 
+                                        <div class="col-12 col-md-6 d-flex align-items-center mb-3">  
+                                            <input type="radio" name="homeowner" id="homeowner_1" value="1"  checked>
+                                            <label for="homeowner_1">&nbsp;กรุงเทพ  </label> 
+                                            <input type="radio" name="homeowner" id="homeowner_2" value="2" class="ms-2">
+                                            <label for="homeowner_2">&nbsp;ต่างจังหวัด </label> 
+                                        </div>
+
+
+                                        
+                                        <div class="col-12 col-md-12 d-flex align-items-center mb-3 homeowner1" >
+                                            <span class="wpx-120">ชื่อสำนักงาน
+                                                <span class="text-danger mx-1">*</span>
+                                            </span>
+                                            <input class="form-control mt-1" type="text"   value="">   
+                                        </div> 
+
+                                        <div class="col-12 col-md-12 d-none align-items-center mb-3 homeowner2">
+                                            <span class="wpx-120">จังหวัด</span>
+                                            <select class="form-control mt-1">
+                                                <option value="0" selected>--จังหวัด--</option>
+                                                <option value="1">	กระบี่</option>
+                                                <option value="2">กาญจนบุรี</option>
+                                                <option value="3">กาฬสินธุ์</option>
+                                                <option value="4">กำแพงเพชร</option>
+                                                <option value="4">ขอนแก่น</option>
+                                                <option value="4">จันทบุรี</option> 
+                                            </select>  
+                                        </div>   
+                                        
+                                        <div class="col-12 col-md-12 d-flex align-items-center mb-3">
+                                            <span class="wpx-120">ที่อยู่
+                                                <span class="text-danger mx-1">*</span>
+                                            </span>
+                                            <input class="form-control mt-1" type="text"   value="">   
+                                        </div>  
+
+ 
+                                        <div class="col-12 col-md-12 d-flex align-items-center mb-3 homeowner1">
+                                            <span class="wpx-120">เขตกรุงเทพ </span> 
+                                        </div>   
+                                        <div class="col-12 col-md-12 d-flex align-items-center mb-3 homeowner1">
+                                            <span class="wpx-20">1</span>
+                                            <select class="form-control mt-1">
+                                                <option value="0">เขตกรุงเทพ</option>
+                                                <option value="1" selected>เขตพระนคร</option>
+                                                <option value="2">เขตดุสิต</option>
+                                                <option value="3">เขตหนองจอก</option>
+                                                <option value="4">เขตบางรัก</option>
+                                                <option value="4">เขตบางเขน</option>
+                                                <option value="4">เขตบางกะปิ</option>
+                                                <option value="4">เขตปทุมวัน</option>
+                                            </select> 
+                                            <button class="btn btn-danger wpx-60 ms-2"><i class="fal fa-trash-alt"></i></button>
+                                        </div>   
+                                        <div class="col-12 col-md-12 d-flex align-items-center mb-3 homeowner1">
+                                            <span class="wpx-20">2</span>
+                                            <select class="form-control mt-1">
+                                                <option value="0">เขตกรุงเทพ</option>
+                                                <option value="1">เขตพระนคร</option>
+                                                <option value="2" selected>เขตดุสิต</option>
+                                                <option value="3">เขตหนองจอก</option>
+                                                <option value="4">เขตบางรัก</option>
+                                                <option value="4">เขตบางเขน</option>
+                                                <option value="4">เขตบางกะปิ</option>
+                                                <option value="4">เขตปทุมวัน</option>
+                                            </select> 
+                                            <button class="btn btn-danger wpx-60 ms-2"><i class="fal fa-trash-alt"></i></button>
+                                        </div>   
+                                        <div class="col-12 col-md-12 d-flex align-items-center mb-3 homeowner1">
+                                            <button class="btn btn-primary px-4">+ เพิ่ม</button>
+                                        </div>
+
+                                        
+                                    </div>
+                                </div> 
+                                <div class="modal-footer">
+                                    <div class="w-100 d-flex">
+                                        <div class="w-50 pe-1">
+                                            <button class="btn btn-outline-primary w-100">ยกเลิก</button>
+                                        </div>
+                                        <div class="w-50 ps-1">
+                                            <button class="btn btn-primary w-100">บันทึก</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="w-100 card border-0 p-0">
+                        <div class="d-flex mx-0 px-3 pt-3"><input class="form-control wpx-250 bg-contain border-0 mx-1 mb-3" type="text" placeholder="กรอกข้อมูล" value=""><button class="btn btn-primary mx-1 mb-3">ค้นหา</button><button class="btn btn-outline-primary mx-1 mb-3">รีเซ็ต</button></div>
+                        <div class="table-responsive">
+                            <table class="table table-borderless table-striped" style="vertical-align: middle;">
+                                <thead class="bg-primary">
+                                    <tr>
+                                        <th class="text-center text-white">ลำดับ</th>
+                                        <th class="text-left text-white">ชื่อสำนักงานจัดหางาน </th> 
+                                        <th class="text-left text-white">ที่อยู่</th>  
+                                        <th class="text-center text-white update">จัดการ</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="text-center">1</td>
+                                        <td class="text-left">สำนักงานจัดหางาน เขต 1</td>  
+                                        <td class="text-left">173, 1-2 ถ สุรวงศ์ แขวงสุริยวงศ์ เขตบางรัก กรุงเทพมหานคร 10500</td>   
+                                        <td class="text-center">
+                                            <div class="w-100 d-flex justify-content-center">
+                                                <a href="#"><div class="pointer wpx-30 hpx-30 rounded bg-primary-light mx-1 d-flex justify-content-center align-items-center"><label class="pointer icon text-primary p-2"><i class="fal fa-edit"></i></label></div> </a>
+                                            </div>
+                                        </td>
+                                    </tr>    
+                                    <tr>
+                                        <td class="text-center">2</td>
+                                        <td class="text-left">สำนักงานจัดหางาน เขต 2</td>  
+                                        <td class="text-left">48 48/1 ถ. สุขสวัสดิ์ แขวงราษฎร์บูรณะ เขตราษฎร์บูรณะ กรุงเทพมหานคร 10140</td>   
+                                        <td class="text-center">
+                                            <div class="w-100 d-flex justify-content-center">
+                                                <a href="#"><div class="pointer wpx-30 hpx-30 rounded bg-primary-light mx-1 d-flex justify-content-center align-items-center"><label class="pointer icon text-primary p-2"><i class="fal fa-edit"></i></label></div> </a>
+                                            </div>
+                                        </td>
+                                    </tr>    
+                                    <tr>
+                                        <td class="text-center">3</td>
+                                        <td class="text-left">สำนักงานจัดหางาน เขต 3</td>  
+                                        <td class="text-left">5 อาคาร 7 ซอย บางนา-ตราด บางนาใต้ เขตบางนา กรุงเทพมหานคร 10260</td>   
+                                        <td class="text-center">
+                                            <div class="w-100 d-flex justify-content-center">
+                                                <a href="#"><div class="pointer wpx-30 hpx-30 rounded bg-primary-light mx-1 d-flex justify-content-center align-items-center"><label class="pointer icon text-primary p-2"><i class="fal fa-edit"></i></label></div> </a>
+                                            </div>
+                                        </td>
+                                    </tr>    
+                                    <tr>
+                                        <td class="text-center">4</td>
+                                        <td class="text-left">สำนักงานจัดหางานจังหวัดกาญจนบุรี</td>  
+                                        <td class="text-left">สำนักงานจัดหางาน ตำบล ปากแพรก อำเภอเมืองกาญจนบุรี กาญจนบุรี 71000</td>   
+                                        <td class="text-center">
+                                            <div class="w-100 d-flex justify-content-center">
+                                                <a href="#"><div class="pointer wpx-30 hpx-30 rounded bg-primary-light mx-1 d-flex justify-content-center align-items-center"><label class="pointer icon text-primary p-2"><i class="fal fa-edit"></i></label></div> </a>
+                                            </div>
+                                        </td>
+                                    </tr>    
+                                    <tr>
+                                        <td class="text-center">5</td>
+                                        <td class="text-left">สำนักงานจัดหางานจังหวัดกำแพงเพชร</td>  
+                                        <td class="text-left">ศาลากลาง ถนน กำแพงเพชร-สุโขทัย ตำบล หนองปลิง อำเภอเมืองกำแพงเพชร กำแพงเพชร 62000</td>   
+                                        <td class="text-center">
+                                            <div class="w-100 d-flex justify-content-center">
+                                                <a href="#"><div class="pointer wpx-30 hpx-30 rounded bg-primary-light mx-1 d-flex justify-content-center align-items-center"><label class="pointer icon text-primary p-2"><i class="fal fa-edit"></i></label></div> </a>
+                                            </div>
+                                        </td>
+                                    </tr>    
+                                </tbody>
+                            </table>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+	
+	<script src="js/jquery.min.js"></script>
+	<script src="js/popper.min.js" ></script>
+	<script src="js/bootstrap.bundle.min.js"></script>
+
+	<script>
+        
+		$('.pro-menu .pro-menu-item').click(function(){     
+			$(".pro-menu .pro-menu-item").removeClass("active");
+			$(this).addClass("active");
+		}); 
+
+        $('input[type=radio][name=homeowner]').change(function() { 
+            if (this.value == "1") {
+                $(".homeowner2").removeClass("d-flex");   
+                $(".homeowner2").addClass("d-none");   
+                $(".homeowner1").removeClass("d-none");   
+                $(".homeowner1").addClass("d-flex");   
+            }
+            else if (this.value == "2") {
+                $(".homeowner1").removeClass("d-flex");   
+                $(".homeowner1").addClass("d-none");   
+                $(".homeowner2").removeClass("d-none");   
+                $(".homeowner2").addClass("d-flex");  
+            } 
+        });
+    </script>
+ 
+</body>
+</html>

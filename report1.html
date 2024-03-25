@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> ระบบ CLMV </title>
+	<link rel="icon" type="image/x-icon" href="https://clmv.servicesaes.com/favicon.ico">
+	<link href="css/bootstrap.min.css" rel="stylesheet"> 
+	<link href="css/main.css" rel="stylesheet">  
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> 
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>  
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" /> 
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>  
+ 
+
+
+</head>
+<body> 
+    <div id="root">
+        <div class="w-100 min-vh-100 fade-in">
+            <div>
+                <div class="w-100 px-0 position-fixed d-flex justify-content-between bg-primary shadow px-4 py-2 body" style="height: 60px; z-index: 1010;">
+                    <div class="d-flex align-items-center">
+                        <label class="d-block d-lg-none d-xl-none me-3"><span class="icon text-white text-18 pointer"></span></label>
+                        <div class="d-none d-sm-none d-md-flex d-lg-flex d-xl-flex text-white"><small>หน้าหลัก</small><small class="ms-2"> &gt; รายงานแจ้งเตือนหมดอายุ </small><small class="ms-2"></small></div>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-center">
+                        <div class="ps-3"><span class="me-2 align-items-center d-none d-sm-flex d-md-flex d-lg-flex d-xl-flex text-white">John Doe</span><small class="me-2 align-items-center d-none d-sm-flex d-md-flex d-lg-flex d-xl-flex text-white">admin_system@gmail.com</small></div>
+                        <div class="wpx-40 hpx-40 rounded-circle bg-secondary"><img src="https://clmv.servicesaes.com/static/media/logo.bc9cec12c29fa740a3ed.png" style="width: 40px;"></div>
+                        <div class="dropdowns">
+                            <span class="dropbtns pointer"><label class="icon text-18 p-2 text-white"><i class="fal fa-chevron-down"></i></label></span>
+                            <div class="dropdowns-content wpx-250 bg-white"><a class="pointer"><label class="icon mx-2"><i class="fal fa-sign-out-alt"></i></label>ออกจากระบบ</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pro-sidebar full-screen pt-0 lg toggled">
+                    <div class="pro-sidebar-inner">
+                        <div class="pro-sidebar-layout">
+                            <div class="d-flex justify-content-center pt-2"><img src="https://clmv.servicesaes.com/static/media/logo.bc9cec12c29fa740a3ed.png" style="width: 170px;"></div>
+                            <div class="w-100 text-center mb-3"><small class="text-secondary">V.1.0.5</small></div>
+                           <nav class="pro-menu overflow-scroll none-scroll sidebar-h">
+                                <ul>
+                                    <li class="pro-menu-item">
+                                        <div class="pro-inner-item" tabindex="0" role="button"><span class="pro-icon-wrapper"><span class="pro-icon"><i class="fal fa-file-alt"></i></span></span><span class="pro-item-content"><a href="index.html">รายการรับเรื่องทั้งหมด
+                                        </a></span></div>
+                                    </li>
+                                    <li class="pro-menu-item">
+                                        <div class="pro-inner-item" tabindex="0" role="button">
+                                            <span class="pro-icon-wrapper">
+                                                <span class="pro-icon">
+                                                    <i class="fal fa-file-alt"></i>
+                                                </span>
+                                            </span>
+                                            <span class="pro-item-content">
+                                                <a href="waiting.html">รายการรอยื่น <p>5</p></a>
+                                            </span>
+                                        </div>
+                                    </li>
+                                    <li class="pro-menu-item ">
+                                        <div class="pro-inner-item" tabindex="0" role="button"><span class="pro-icon-wrapper"><span class="pro-icon"><i class="fal fa-file-alt"></i></span></span><span class="pro-item-content"><a href="quotations.html">ใบเสนอราคา</a></span></div>
+                                    </li>  
+                                    <li class="pro-menu-item">
+                                        <div class="pro-inner-item" tabindex="0" role="button"><span class="pro-icon-wrapper"><span class="pro-icon"><i class="fal fa-file-alt"></i></span></span><span class="pro-item-content"><a href="invoice-list.html">รายการใบแจ้งหนี้
+                                        </a></span></div>
+                                    </li> 
+                                    <li class="pro-menu-item">
+                                        <div class="pro-inner-item" tabindex="0" role="button"><span class="pro-icon-wrapper"><span class="pro-icon"><i class="fal fa-file-alt"></i></span></span><span class="pro-item-content"><a href="receipt-list.html">รายการใบเสร็จ
+                                        </a></span></div>
+                                    </li>
+                                    <li class="pro-menu-item">
+                                        <div class="pro-inner-item" tabindex="0" role="button"><span class="pro-icon-wrapper"><span class="pro-icon"><i class="fal fa-file-alt"></i></span></span><span class="pro-item-content"><a href="billing-note.html">Billing Note
+                                        </a></span></div>
+                                    </li>
+                                    <li class="pro-menu-item">
+                                        <div class="pro-inner-item" tabindex="0" role="button"><span class="pro-icon-wrapper"><span class="pro-icon"><i class="fal fa-file-alt"></i></span></span><span class="pro-item-content"><a href="qc-list.html">รายการ QC
+                                        </a></span></div>
+                                    </li>
+                                    <li class="pro-menu-item">
+                                        <div class="pro-inner-item" tabindex="0" role="button"><span class="pro-icon-wrapper"><span class="pro-icon"><i class="fal fa-file-alt"></i></span></span><span class="pro-item-content"><a href="lms.html">ระบบ LMS</a></span></div>
+                                    </li>
+                                    <li class="pro-menu-item ">
+                                        <div class="pro-inner-item" tabindex="0" role="button"><span class="pro-icon-wrapper"><span class="pro-icon"><i class="fal fa-user"></i></span></span><span class="pro-item-content"><a href="employer-list.html">ทะเบียนนายจ้าง</a></span></div>
+                                    </li>
+                                    <li class="pro-menu-item ">
+                                        <div class="pro-inner-item" tabindex="0" role="button"><span class="pro-icon-wrapper"><span class="pro-icon"><i class="fal fa-file-alt"></i></span></span><span class="pro-item-content"><a href="worker-list.html">ทะเบียนลูกจ้าง</a></span></div>
+                                    </li>
+                                    
+                                    <li class="pro-menu-item">
+                                        <div class="pro-inner-item" tabindex="0" role="button"><span class="pro-icon-wrapper"><span class="pro-icon"><i class="fal fa-user-tie"></i></span></span><span class="pro-item-content"><a href="sales-list.html">ฝ่ายการขาย</a></span></div>
+                                    </li>
+                                    <li class="pro-menu-item">
+                                        <div class="pro-inner-item" tabindex="0" role="button"><span class="pro-icon-wrapper"><span class="pro-icon"><i class="fal fa-user-tie"></i></span></span><span class="pro-item-content"><a href="quotations-requests.html">ตัวแทน</a></span></div>
+                                    </li> 
+                                    <li class="pro-menu-item active">
+                                        <div class="pro-inner-item" tabindex="0" role="button">
+                                            <span class="pro-icon-wrapper">
+                                                <span class="pro-icon"><i class="fal fa-file-alt"></i></span>
+                                            </span>
+                                            <span class="pro-item-content"><a href="#">รายงาน</a></span>
+                                        </div> 
+                                        <ul>  
+                                            <li class="pro-menu-item active">
+                                                <div class="pro-inner-item"> 
+                                                    <a href="report1.html">รายงานแจ้งเตือนหมดอายุ </a>
+                                                </div>
+                                            </li>  
+                                            <li class="pro-menu-item">
+                                                <div class="pro-inner-item"> 
+                                                    <a href="report-mou.html">สรุปนำเข้าแรงงาน MOU ประจำเดือน </a>
+                                                </div>
+                                            </li>
+                                            <!-- <li class="pro-menu-item">
+                                                <div class="pro-inner-item"> 
+                                                    <a href="report.html">รายงาน</a>
+                                                </div>
+                                            </li>  -->
+                                        </ul>  
+                                    </li>
+                                    <!--  <li class="pro-menu-item">
+                                        <div class="pro-inner-item" tabindex="0" role="button"><span class="pro-icon-wrapper"><span class="pro-icon"><i class="fal fa-file-alt"></i></span></span><span class="pro-item-content"><a href="planning.html">Planning</a></span></div>
+                                    </li> -->
+                                    <!-- <li class="pro-menu-item">
+                                        <div class="pro-inner-item" tabindex="0" role="button"><span class="pro-icon-wrapper"><span class="pro-icon"><i class="fal fa-download"></i></span></span><span class="pro-item-content"><a href="#">ดาวน์โหลดไฟล์</a></span></div>
+                                    </li> -->
+                                    <li class="pro-menu-item">
+                                        <div class="pro-inner-item" tabindex="0" role="button">
+                                            <span class="pro-icon-wrapper">
+                                                <span class="pro-icon"><i class="fal fa-cog"></i></span>
+                                            </span>
+                                            <span class="pro-item-content"><a href="#">การตั้งค่า</a></span>
+                                        </div> 
+                                        <ul>   
+                                            <li class="pro-menu-item">
+                                                <div class="pro-inner-item"> 
+                                                    <a href="profile.html">จัดการบัญชีระบบ</a>
+                                                </div>
+                                            </li>  
+                                            <li class="pro-menu-item">
+                                                <div class="pro-inner-item"> 
+                                                    <a href="menu-work.html">จัดการเมนูรายการรับเรื่อง</a>
+                                                </div>
+                                            </li> 
+                                             
+                                            <li class="pro-menu-item">
+                                                <div class="pro-inner-item"> 
+                                                    <a href="expiration-notification.html">การแจ้งเตือนหมดอายุเอกสาร</a>
+                                                </div>
+                                            </li>  
+                                           <li class="pro-menu-item">
+                                                <div class="pro-inner-item"> 
+                                                    <a href="issue-number.html">การออกเลขเรื่อง</a>
+                                                </div>
+                                            </li>   
+                                            <!-- <li class="pro-menu-item">
+                                                <div class="pro-inner-item"> 
+                                                    <a href="doc-number.html">การออกเลขเอกสาร</a>
+                                                </div>
+                                            </li> -->   
+                                            <li class="pro-menu-item">
+                                                <div class="pro-inner-item"> 
+                                                    <a href="lms-list.html">จัดการระบบ LMS</a>
+                                                </div>
+                                            </li>
+                                            <li class="pro-menu-item">
+                                                <div class="pro-inner-item"> 
+                                                    <a href="lms-category.html">จัดการหมวดหมู่ระบบ LMS</a>
+                                                </div>
+                                            </li>
+                                            <!-- <li class="pro-menu-item">
+                                                <div class="pro-inner-item"> 
+                                                    <a href="manage-quotations.html">จัดการใบเสนอราคา</a>
+                                                </div>
+                                            </li>  --> 
+                                            <li class="pro-menu-item">
+                                                <div class="pro-inner-item"> 
+                                                    <a href="service-types.html">จัดการประเภทบริการ</a>
+                                                </div>
+                                            </li> 
+                                            <li class="pro-menu-item">
+                                                <div class="pro-inner-item"> 
+                                                    <a href="service-price.html">จัดการอัตราค่าบริการ</a>
+                                                </div>
+                                            </li>
+                                            <li class="pro-menu-item">
+                                                <div class="pro-inner-item"> 
+                                                    <a href="employment.html">รายชื่อสำนักงานจัดหางาน</a>
+                                                </div>
+                                            </li>
+                                            <li class="pro-menu-item">
+                                                <div class="pro-inner-item"> 
+                                                    <a href="document.html">ชื่อเอกสาร</a>
+                                                </div>
+                                            </li>
+                                            <li class="pro-menu-item">
+                                                <div class="pro-inner-item"> 
+                                                    <a href="delivery.html">การส่งเอกสาร</a>
+                                                </div>
+                                            </li>
+                                            <li class="pro-menu-item">
+                                                <div class="pro-inner-item"> 
+                                                    <a href="bank-account.html">บัญชีธนาคาร</a>
+                                                </div>
+                                            </li>
+                                            <li class="pro-menu-item">
+                                                <div class="pro-inner-item"> 
+                                                    <a href="title-header.html">หัวกระดาษ</a>
+                                                </div>
+                                            </li>
+                                            <li class="pro-menu-item">
+                                                <div class="pro-inner-item"> 
+                                                    <a href="document.html">ชื่อเอกสาร</a>
+                                                </div>
+                                            </li>
+                                            <li class="pro-menu-item">
+                                                <div class="pro-inner-item"> 
+                                                    <a href="delivery.html">การส่งเอกสาร</a>
+                                                </div>
+                                            </li>
+                                            <li class="pro-menu-item">
+                                                <div class="pro-inner-item"> 
+                                                    <a href="bank-account.html">บัญชีธนาคาร</a>
+                                                </div>
+                                            </li>
+                                            <li class="pro-menu-item">
+                                                <div class="pro-inner-item"> 
+                                                    <a href="title-header.html">หัวกระดาษ</a>
+                                                </div>
+                                            </li>
+                                        </ul>  
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="overlay" role="button" tabindex="0" aria-label="overlay"></div>
+                </div>
+            </div>
+            <div class="body bg-light min-vh-100">
+                <div class="p-3">
+                    <div class="d-flex mx-0 align-items-center justify-content-between test mb-3">
+                        <h3 class="mb-3"><b>รายงานแจ้งเตือนหมดอายุ </b></h3>  
+                    </div>
+                    <div class="w-100 card border-0 p-0">
+
+                       
+                        
+                        <div class="d-flex mx-0 px-3 pt-3">
+                            <div class="row justify-content-center"> 
+
+                                <div class="col-12 col-md-12 d-flex align-items-center mb-3">
+                                    <span class="wpx-150">ประเภทเอกสาร <span class="text-danger mx-1">*</span></span> 
+                                     
+                                    <input type="checkbox" name="search.group.id" id="search_1" value="1" >
+                                    <label for="search_1">&nbsp;Work permit</label>
+    
+                                    <input type="checkbox" name="search.group.id" id="search_2" value="2" checked class="ms-2">
+                                    <label for="search_2">&nbsp;VISA</label>
+
+                                    <input type="checkbox" name="search.group.id" id="search_3" value="3" class="ms-3">
+                                    <label for="search_3">&nbsp;Passport</label>
+                                    
+                                    <input type="checkbox" name="search.group.id" id="search_4" value="4" checked class="ms-3">
+                                    <label for="search_4">&nbsp;แจ้งอยู่เกิน 90 วัน</label>
+                                     
+                                </div>
+                                <div class="col-12 col-md-4 d-flex align-items-center mb-3 position-relative">
+                                    <span class="wpx-150">นายจ้าง<span class="text-danger mx-1">*</span></span>
+                                    <select class="form-control mt-1">
+                                        <option value="0">ทั้งหมด</option>
+                                        <option value="1" selected>บริษัท เอแอนด์อีซีสเต็มเมเน็จเม้นท์ จำกัด	</option>
+                                        <option value="2">นายสมยศ ชูเชย	</option>
+                                        <option value="3">บริษัท ไทย 99 จำกัด	</option> 
+                                    </select>
+                                    <i class="fal fa-chevron-down iconi"></i>
+                                </div>  
+
+                                <div class="col-12 col-md-4 d-flex align-items-center mb-3 position-relative">
+                                    <span class="wpx-150">ปี<span class="text-danger mx-1">*</span></span>
+                                    <select class="form-control mt-1">
+                                        <option value="0">2567</option>
+                                        <option value="1">2566</option>
+                                        <option value="2">2565</option>
+                                        <option value="3">2564</option>
+                                        <option value="4">2563</option>
+                                    </select>
+                                    <i class="fal fa-chevron-down iconi"></i>
+                                </div>  
+
+                                <div class="col-12 col-md-4 d-flex align-items-center mb-3 position-relative">
+                                    <span class="wpx-150">เดือน<span class="text-danger mx-1">*</span></span>
+                                    <select class="form-control mt-1"> 
+                                        <option value="1">มกราคม</option>
+                                        <option value="2">กุมภาพันธ์</option>
+                                        <option value="3">มีนาคม</option>
+                                        <option value="4">เมษายน</option>
+                                        <option value="5">พฤษภาคม</option>
+                                        <option value="6">มิถุนายน</option>
+                                        <option value="7">กรกฎาคม</option>
+                                        <option value="8">สิงหาคม</option>
+                                        <option value="9">กันยายน</option>
+                                        <option value="10">ตุลาคม</option>
+                                        <option value="11">พฤศจิกายน</option>
+                                        <option value="12">ธันวาคม</option>
+                                    </select>
+                                    <i class="fal fa-chevron-down iconi"></i>
+                                </div>  
+                            </div> 
+                    
+
+                        </div>
+                        <div class="d-flex justify-content-center mx-0 px-3 pt-3"> 
+ 
+                            <button class="btn btn-primary mx-1 mb-3"><i class="fal fa-search"></i> ค้นหา</button> 
+                            <button class="btn btn-outline-primary mx-1 mb-3">ยกเลิก</button>
+
+                       
+                        </div>
+                        <hr>
+
+
+                        <div>
+                                 
+                        <button class="btn btn-success mb-3 w-120"><i class="fal fa-file-excel"></i> Export Excel</button> 
+                        <!-- <button class="btn btn-danger mb-3 w-120"><i class="fal fa-file-pdf"></i> Export PDF</button>  -->
+                        
+                        </div>
+                        
+ 
+                        <div class="table-responsive"> 
+                            <table class="table table-borderless table-striped">
+                                <thead class="bg-primary">
+                                    <tr>
+                                        <th class="text-center text-white">ลำดับ</th>
+                                        <th class="text-left text-white">ชื่อคนต่างด้าว </th>
+                                        <th class="text-left text-white">รหัสพนักงาน </th>
+                                        <th class="text-left text-white">สัญชาติ </th> 
+                                        <th class="text-left text-white">หนังสือเดินทางเลขที่ </th> 
+                                        <th class="text-left text-white">วันเดินทางเข้า </th> 
+                                        <th class="text-left text-white">หมายเลขวีซ่า </th> 
+                                        <th class="text-left text-white">ประเภทวีซ่า </th> 
+                                        <th class="text-left text-white">นายจ้าง </th> 
+                                        <th class="text-left text-white">ครบกำหนดอนุญาต วีซ่า</th> 
+                                        <th class="text-left text-white">ครบกำหนดอนุญาต 90 วัน </th> 
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="text-center">1</td>
+                                        <td class="text-left">MR.KYAW MOE SOE (นายจอโมโซ -)</td>  
+                                        <td class="text-left">919305</td>  
+                                        <td class="text-left">MYANMAR</td>  
+                                        <td class="text-left">ME616375</td>  
+                                        <td class="text-left">29 JUN 2023</td>  
+                                        <td class="text-left">257/65</td>  
+                                        <td class="text-left">NON L-A</td>  
+                                        <td class="text-left">บริษัท สหฟาร์ม จำกัด </td>  
+                                        <td class="text-left">05 FEB 2024</td>  
+                                        <td class="text-left">02 DEC 2023</td>   
+                                    </tr>   
+                                    <tr>
+                                        <td class="text-center">2</td>
+                                        <td class="text-left">MR.PHOE HTOO (นายโบทู -)</td>  
+                                        <td class="text-left">893558</td>  
+                                        <td class="text-left">MYANMAR</td>  
+                                        <td class="text-left">CC6988591</td>  
+                                        <td class="text-left">12 JUL 2017</td>  
+                                        <td class="text-left">124/66</td>  
+                                        <td class="text-left">NON L-A</td>  
+                                        <td class="text-left">บริษัท สหฟาร์ม จำกัด </td>  
+                                        <td class="text-left">13 FEB 2025</td>  
+                                        <td class="text-left">04 DEC 2023</td>   
+                                    </tr>   
+                                    <tr>
+                                        <td class="text-center">3</td>
+                                        <td class="text-left">MISS.KHAING WAR HTWE (นางสาวข่ายวาทุย -)</td>  
+                                        <td class="text-left">919542</td>  
+                                        <td class="text-left">MYANMAR</td>  
+                                        <td class="text-left">ME934345</td>  
+                                        <td class="text-left">17 MAR 2020</td>  
+                                        <td class="text-left">834</td>  
+                                        <td class="text-left">NON L-A</td>  
+                                        <td class="text-left">บริษัท สหฟาร์ม จำกัด </td>  
+                                        <td class="text-left">15 MAR 2024</td>  
+                                        <td class="text-left">05 DEC 2023</td>   
+                                    </tr>   
+                                    <tr>
+                                        <td class="text-center">4</td>
+                                        <td class="text-left">MR.SAW KAN THEIN (นายซอเคนทีน -)</td>  
+                                        <td class="text-left">981668</td>  
+                                        <td class="text-left">MYANMAR</td>  
+                                        <td class="text-left">CC7963183</td>  
+                                        <td class="text-left">13 JAN 2017</td>  
+                                        <td class="text-left">4777/66</td>  
+                                        <td class="text-left">NON L-A</td>  
+                                        <td class="text-left">บริษัท สหฟาร์ม จำกัด </td>  
+                                        <td class="text-left">13 FEB 2024</td>  
+                                        <td class="text-left">05 DEC 2023</td>   
+                                    </tr>   
+                                    <tr>
+                                        <td class="text-center">5</td>
+                                        <td class="text-left">MRS.HNIN AYE (นางเลเอ -)</td>  
+                                        <td class="text-left">906315</td>  
+                                        <td class="text-left">MYANMAR</td>  
+                                        <td class="text-left">CC7138495</td>  
+                                        <td class="text-left">21 JUL 2017</td>  
+                                        <td class="text-left">191/66</td>  
+                                        <td class="text-left">NON L-A</td>  
+                                        <td class="text-left">บริษัท สหฟาร์ม จำกัด </td>  
+                                        <td class="text-left">13 FEB 2025</td>  
+                                        <td class="text-left">05 DEC 2023</td>   
+                                    </tr>   
+                                    <tr>
+                                        <td class="text-center">6</td>
+                                        <td class="text-left">MISS.NAN MARY WIN (นางสาวนานเมเยวิน -)</td>  
+                                        <td class="text-left">905333</td>  
+                                        <td class="text-left">MYANMAR</td>  
+                                        <td class="text-left">CC7138482</td>  
+                                        <td class="text-left">13 JUL 2017</td>  
+                                        <td class="text-left">156/66</td>  
+                                        <td class="text-left">NON L-A</td>  
+                                        <td class="text-left">บริษัท สหฟาร์ม จำกัด </td>  
+                                        <td class="text-left">13 FEB 2025</td>  
+                                        <td class="text-left">05 DEC 2023</td>   
+                                    </tr>   
+                                    <tr>
+                                        <td class="text-center">7</td>
+                                        <td class="text-left">MISS.AYE THIN (นางสาวเอเต -)</td>  
+                                        <td class="text-left">907253</td>  
+                                        <td class="text-left">MYANMAR</td>  
+                                        <td class="text-left">ME644440</td>  
+                                        <td class="text-left">07 DEC 2020</td>  
+                                        <td class="text-left">297/66</td>  
+                                        <td class="text-left">NON L-A</td>  
+                                        <td class="text-left">บริษัท สหฟาร์ม จำกัด </td>  
+                                        <td class="text-left">13 FEB 2025</td>  
+                                        <td class="text-left">05 DEC 2023</td>   
+                                    </tr>   
+                                    <tr>
+                                        <td class="text-center">8</td>
+                                        <td class="text-left">MR.SAUNG TIN (นายนี -)</td>  
+                                        <td class="text-left">908126</td>  
+                                        <td class="text-left">MYANMAR</td>  
+                                        <td class="text-left">MF056722</td>  
+                                        <td class="text-left">07 DEC 2020</td>  
+                                        <td class="text-left">306/66</td>  
+                                        <td class="text-left">NON L-A</td>  
+                                        <td class="text-left">บริษัท สหฟาร์ม จำกัด </td>  
+                                        <td class="text-left">13 FEB 2025</td>  
+                                        <td class="text-left">05 DEC 2023</td>   
+                                    </tr>   
+                                    <tr>
+                                        <td class="text-center">9</td>
+                                        <td class="text-left">MISS.KHAING KHAING AYE (นางสาวน.ส.คายคายอี -)</td>  
+                                        <td class="text-left">916318</td>  
+                                        <td class="text-left">MYANMAR</td>  
+                                        <td class="text-left">MH210571</td>  
+                                        <td class="text-left">16 JUL 2018</td>  
+                                        <td class="text-left">3074/65</td>  
+                                        <td class="text-left">NON L-A</td>  
+                                        <td class="text-left">บริษัท สหฟาร์ม จำกัด </td>  
+                                        <td class="text-left">14 JUL 2024</td>  
+                                        <td class="text-left">05 DEC 2023</td>   
+                                    </tr>   
+                                    <tr>
+                                        <td class="text-center">10</td>
+                                        <td class="text-left">MR.HAN MYINT (นายฮานมิว -) </td>  
+                                        <td class="text-left">913662</td>  
+                                        <td class="text-left">MYANMAR</td>  
+                                        <td class="text-left">CC7963076</td>  
+                                        <td class="text-left">26 JUL 2017</td>  
+                                        <td class="text-left">4861/66</td>  
+                                        <td class="text-left">NON L-A</td>  
+                                        <td class="text-left">บริษัท สหฟาร์ม จำกัด </td>  
+                                        <td class="text-left">13 FEB 2024</td>  
+                                        <td class="text-left">05 DEC 2023</td>   
+                                    </tr>   
+                                </tbody>
+                            </table>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="myModal">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content"> 
+                <div class="modal-header">
+                    <h4 class="modal-title">Machting </h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div> 
+                <div class="modal-body"> 
+                    <div class="col-12 col-md-6 d-flex align-items-center mb-3"> 
+                        <input type="radio" name="customer" id="customerGroupId_1" value="1">
+                        <label for="customerGroupId_1">&nbsp;Machting ได้ </label>
+
+                        <input type="radio" name="customer" id="customerGroupId_2" value="2" class="ms-2" >
+                        <label for="customerGroupId_2">&nbsp;Machting ไม่ได้ </label>
+                    </div> 
+                </div>
+                <div class="modal-footer">
+                    <div class="w-100 d-flex">
+                        <div class="w-50 pe-1">
+                            <button class="btn btn-outline-primary w-100">ยกเลิก</button>
+                        </div>
+                        <div class="w-50 ps-1">
+                            <button class="btn btn-primary w-100">บันทึก</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+	
+	<script src="js/jquery.min.js"></script>
+	<script src="js/popper.min.js" ></script>
+	<script src="js/bootstrap.bundle.min.js"></script>
+
+	<script>
+        
+		$('.pro-menu .pro-menu-item').click(function(){     
+			$(".pro-menu .pro-menu-item").removeClass("active");
+			$(this).addClass("active");
+		}); 
+    </script>
+ 
+</body>
+</html>

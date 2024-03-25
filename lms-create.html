@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> ระบบ CLMV </title>
+	<link rel="icon" type="image/x-icon" href="https://clmv.servicesaes.com/favicon.ico">
+	<link href="css/bootstrap.min.css" rel="stylesheet"> 
+	<link href="css/main.css" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> 
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>  
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" /> 
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>  
+ 
+
+
+</head>
+<body> 
+    <div id="root">
+        <div class="w-100 min-vh-100 fade-in">
+            <div>
+                <div class="w-100 px-0 position-fixed d-flex justify-content-between bg-primary shadow px-4 py-2 body" style="height: 60px; z-index: 1010;">
+                    <div class="d-flex align-items-center">
+                        <label class="d-block d-lg-none d-xl-none me-3"><span class="icon text-white text-18 pointer"></span></label>
+                        <div class="d-none d-sm-none d-md-flex d-lg-flex d-xl-flex text-white"><small>หน้าหลัก</small><small class="ms-2"> &gt; จัดการระบบ LMS</small><small class="ms-2"></small></div>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-center">
+                        <div class="ps-3"><span class="me-2 align-items-center d-none d-sm-flex d-md-flex d-lg-flex d-xl-flex text-white">John Doe</span><small class="me-2 align-items-center d-none d-sm-flex d-md-flex d-lg-flex d-xl-flex text-white">admin_system@gmail.com</small></div>
+                        <div class="wpx-40 hpx-40 rounded-circle bg-secondary"><img src="https://clmv.servicesaes.com/static/media/logo.bc9cec12c29fa740a3ed.png" style="width: 40px;"></div>
+                        <div class="dropdowns">
+                            <span class="dropbtns pointer"><label class="icon text-18 p-2 text-white"><i class="fal fa-chevron-down"></i></label></span>
+                            <div class="dropdowns-content wpx-250 bg-white"><a class="pointer"><label class="icon mx-2"><i class="fal fa-sign-out-alt"></i></label>ออกจากระบบ</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pro-sidebar full-screen pt-0 lg toggled">
+                    <div class="pro-sidebar-inner">
+                        <div class="pro-sidebar-layout">
+                            <div class="d-flex justify-content-center pt-2"><img src="https://clmv.servicesaes.com/static/media/logo.bc9cec12c29fa740a3ed.png" style="width: 170px;"></div>
+                            <div class="w-100 text-center mb-3"><small class="text-secondary">V.1.0.5</small></div>
+                           <nav class="pro-menu overflow-scroll none-scroll sidebar-h">
+                                <ul>
+                                    <li class="pro-menu-item">
+                                        <div class="pro-inner-item" tabindex="0" role="button"><span class="pro-icon-wrapper"><span class="pro-icon"><i class="fal fa-file-alt"></i></span></span><span class="pro-item-content"><a href="index.html">รายการรับเรื่องทั้งหมด
+                                        </a></span></div>
+                                    </li>
+                                    <li class="pro-menu-item">
+                                        <div class="pro-inner-item" tabindex="0" role="button">
+                                            <span class="pro-icon-wrapper">
+                                                <span class="pro-icon">
+                                                    <i class="fal fa-file-alt"></i>
+                                                </span>
+                                            </span>
+                                            <span class="pro-item-content">
+                                                <a href="waiting.html">รายการรอยื่น <p>5</p></a>
+                                            </span>
+                                        </div>
+                                    </li>
+                                    <li class="pro-menu-item ">
+                                        <div class="pro-inner-item" tabindex="0" role="button"><span class="pro-icon-wrapper"><span class="pro-icon"><i class="fal fa-file-alt"></i></span></span><span class="pro-item-content"><a href="quotations.html">ใบเสนอราคา</a></span></div>
+                                    </li>  
+                                    <li class="pro-menu-item">
+                                        <div class="pro-inner-item" tabindex="0" role="button"><span class="pro-icon-wrapper"><span class="pro-icon"><i class="fal fa-file-alt"></i></span></span><span class="pro-item-content"><a href="invoice-list.html">รายการใบแจ้งหนี้
+                                        </a></span></div>
+                                    </li> 
+                                    <li class="pro-menu-item">
+                                        <div class="pro-inner-item" tabindex="0" role="button"><span class="pro-icon-wrapper"><span class="pro-icon"><i class="fal fa-file-alt"></i></span></span><span class="pro-item-content"><a href="receipt-list.html">รายการใบเสร็จ
+                                        </a></span></div>
+                                    </li>
+                                    <li class="pro-menu-item">
+                                        <div class="pro-inner-item" tabindex="0" role="button"><span class="pro-icon-wrapper"><span class="pro-icon"><i class="fal fa-file-alt"></i></span></span><span class="pro-item-content"><a href="billing-note.html">Billing Note
+                                        </a></span></div>
+                                    </li>
+                                    <li class="pro-menu-item">
+                                        <div class="pro-inner-item" tabindex="0" role="button"><span class="pro-icon-wrapper"><span class="pro-icon"><i class="fal fa-file-alt"></i></span></span><span class="pro-item-content"><a href="qc-list.html">รายการ QC
+                                        </a></span></div>
+                                    </li>
+                                    <li class="pro-menu-item">
+                                        <div class="pro-inner-item" tabindex="0" role="button"><span class="pro-icon-wrapper"><span class="pro-icon"><i class="fal fa-file-alt"></i></span></span><span class="pro-item-content"><a href="lms.html">ระบบ LMS</a></span></div>
+                                    </li>
+                                    <li class="pro-menu-item ">
+                                        <div class="pro-inner-item" tabindex="0" role="button"><span class="pro-icon-wrapper"><span class="pro-icon"><i class="fal fa-user"></i></span></span><span class="pro-item-content"><a href="employer-list.html">ทะเบียนนายจ้าง</a></span></div>
+                                    </li>
+                                    <li class="pro-menu-item">
+                                        <div class="pro-inner-item" tabindex="0" role="button"><span class="pro-icon-wrapper"><span class="pro-icon"><i class="fal fa-file-alt"></i></span></span><span class="pro-item-content"><a href="worker-list.html">ทะเบียนลูกจ้าง</a></span></div>
+                                    </li>
+                                    
+                                    <li class="pro-menu-item">
+                                        <div class="pro-inner-item" tabindex="0" role="button"><span class="pro-icon-wrapper"><span class="pro-icon"><i class="fal fa-user-tie"></i></span></span><span class="pro-item-content"><a href="sales-list.html">ฝ่ายการขาย</a></span></div>
+                                    </li>
+                                    <li class="pro-menu-item">
+                                        <div class="pro-inner-item" tabindex="0" role="button"><span class="pro-icon-wrapper"><span class="pro-icon"><i class="fal fa-user-tie"></i></span></span><span class="pro-item-content"><a href="quotations-requests.html">ตัวแทน</a></span></div>
+                                    </li>
+                                    <li class="pro-menu-item">
+                                        <div class="pro-inner-item" tabindex="0" role="button">
+                                            <span class="pro-icon-wrapper">
+                                                <span class="pro-icon"><i class="fal fa-file-alt"></i></span>
+                                            </span>
+                                            <span class="pro-item-content"><a href="#">รายงาน</a></span>
+                                        </div> 
+                                        <ul>  
+                                            <li class="pro-menu-item">
+                                                <div class="pro-inner-item"> 
+                                                    <a href="report1.html">รายงานแจ้งเตือนหมดอายุ </a>
+                                                </div>
+                                            </li> 
+                                            <li class="pro-menu-item">
+                                                <div class="pro-inner-item"> 
+                                                    <a href="report-mou.html">สรุปนำเข้าแรงงาน MOU ประจำเดือน </a>
+                                                </div>
+                                            </li> 
+                                            <!-- <li class="pro-menu-item">
+                                                <div class="pro-inner-item"> 
+                                                    <a href="report.html">รายงาน</a>
+                                                </div>
+                                            </li>  -->
+                                        </ul>  
+                                    </li>
+                                    <!--  <li class="pro-menu-item">
+                                        <div class="pro-inner-item" tabindex="0" role="button"><span class="pro-icon-wrapper"><span class="pro-icon"><i class="fal fa-file-alt"></i></span></span><span class="pro-item-content"><a href="planning.html">Planning</a></span></div>
+                                    </li> -->
+                                    <!-- <li class="pro-menu-item">
+                                        <div class="pro-inner-item" tabindex="0" role="button"><span class="pro-icon-wrapper"><span class="pro-icon"><i class="fal fa-download"></i></span></span><span class="pro-item-content"><a href="#">ดาวน์โหลดไฟล์</a></span></div>
+                                    </li> -->
+                                    <li class="pro-menu-item active">
+                                        <div class="pro-inner-item" tabindex="0" role="button">
+                                            <span class="pro-icon-wrapper">
+                                                <span class="pro-icon"><i class="fal fa-cog"></i></span>
+                                            </span>
+                                            <span class="pro-item-content"><a href="#">การตั้งค่า</a></span>
+                                        </div> 
+                                        <ul>   
+                                            <li class="pro-menu-item">
+                                                <div class="pro-inner-item"> 
+                                                    <a href="profile.html">จัดการบัญชีระบบ</a>
+                                                </div>
+                                            </li>    
+                                            <li class="pro-menu-item">
+                                                <div class="pro-inner-item"> 
+                                                    <a href="menu-work.html">จัดการเมนูรายการรับเรื่อง</a>
+                                                </div>
+                                            </li>  
+                                             
+                                            <li class="pro-menu-item">
+                                                <div class="pro-inner-item"> 
+                                                    <a href="expiration-notification.html">การแจ้งเตือนหมดอายุเอกสาร</a>
+                                                </div>
+                                            </li>  
+                                           <li class="pro-menu-item">
+                                                <div class="pro-inner-item"> 
+                                                    <a href="issue-number.html">การออกเลขเรื่อง</a>
+                                                </div>
+                                            </li>   
+                                            <!-- <li class="pro-menu-item">
+                                                <div class="pro-inner-item"> 
+                                                    <a href="doc-number.html">การออกเลขเอกสาร</a>
+                                                </div>
+                                            </li> -->   
+                                            <li class="pro-menu-item active">
+                                                <div class="pro-inner-item"> 
+                                                    <a href="lms-list.html">จัดการระบบ LMS</a>
+                                                </div>
+                                            </li>
+                                            <li class="pro-menu-item">
+                                                <div class="pro-inner-item"> 
+                                                    <a href="lms-category.html">จัดการหมวดหมู่ระบบ LMS</a>
+                                                </div>
+                                            </li>
+                                            <!-- <li class="pro-menu-item">
+                                                <div class="pro-inner-item"> 
+                                                    <a href="manage-quotations.html">จัดการใบเสนอราคา</a>
+                                                </div>
+                                            </li>  -->
+                                            <li class="pro-menu-item">
+                                                <div class="pro-inner-item"> 
+                                                    <a href="service-types.html">จัดการประเภทบริการ</a>
+                                                </div>
+                                            </li> 
+                                            <li class="pro-menu-item">
+                                                <div class="pro-inner-item"> 
+                                                    <a href="service-price.html">จัดการอัตราค่าบริการ</a>
+                                                </div>
+                                            </li>
+                                            <li class="pro-menu-item">
+                                                <div class="pro-inner-item"> 
+                                                    <a href="employment.html">รายชื่อสำนักงานจัดหางาน</a>
+                                                </div>
+                                            </li>
+                                            <li class="pro-menu-item">
+                                                <div class="pro-inner-item"> 
+                                                    <a href="document.html">ชื่อเอกสาร</a>
+                                                </div>
+                                            </li>
+                                            <li class="pro-menu-item">
+                                                <div class="pro-inner-item"> 
+                                                    <a href="delivery.html">การส่งเอกสาร</a>
+                                                </div>
+                                            </li>
+                                            <li class="pro-menu-item">
+                                                <div class="pro-inner-item"> 
+                                                    <a href="bank-account.html">บัญชีธนาคาร</a>
+                                                </div>
+                                            </li>
+                                            <li class="pro-menu-item">
+                                                <div class="pro-inner-item"> 
+                                                    <a href="title-header.html">หัวกระดาษ</a>
+                                                </div>
+                                            </li>
+                                        </ul>  
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="overlay" role="button" tabindex="0" aria-label="overlay"></div>
+                </div>
+            </div>
+            <div class="body bg-light min-vh-100">
+                <div class="p-3"> 
+
+                    <div class="d-flex mx-0 align-items-center justify-content-between test mb-3">
+                        <h3 class="mb-3"><b>สร้าง LMS</b></h3> 
+                    </div>
+
+                    <div class="card shadow border-0 mb-5" style="background: rgb(255, 255, 255);">
+                        <div class="p-3">
+                            <div class="w-100">
+                                <h5 class="mb-3"><b>สร้าง LMS</b></h5>
+                                <hr> 
+                                 
+                                <div class="row mt-3">
+                                    <div class="col-12 col-md-6 d-flex align-items-center mb-3">
+                                        <span class="wpx-150">ชื่อความรู้<span class="text-danger mx-1">*</span></span><input class="form-control mt-1" type="text" value="">
+                                    </div> 
+                                    <div class="col-12 col-md-6 d-flex align-items-center mb-3">
+                                        <span class="wpx-150">หมวดหมู่ความรู้<span class="text-danger mx-1">*</span></span> 
+                                        <select class="form-control mt-1">
+                                            <option value="0">หมวดหมู่ความรู้</option>
+                                            <option value="1">LMS 1</option>
+                                            <option value="2">LMS 2</option>
+                                            <option value="3">LMS 3</option>
+                                            <option value="4">LMS 4</option>
+                                        </select>
+                                    </div> 
+                                    <div class="col-12 col-md-12 d-flex align-items-center mb-3">
+                                        <span class="wpx-150">คำนำ<span class="text-danger mx-1">*</span></span><input class="form-control mt-1" type="text" value="">
+                                    </div> 
+                                    <div class="col-12 col-md-12 d-flex   mb-3">
+                                        <span class="wpx-150">รายละเอียด<span class="text-danger mx-1">*</span></span>
+                                        <textarea class="form-control mt-1" rows="10"></textarea> 
+                                    </div> 
+                                    <!-- <div class="col-12 col-md-6 d-flex align-items-center mb-3">
+                                        <span class="wpx-150">วันที่เริ่ม<span class="text-danger mx-1">*</span></span><input class="form-control mt-1" type="text" value="">
+                                    </div> 
+                                    <div class="col-12 col-md-6 d-flex align-items-center mb-3">
+                                        <span class="wpx-150">วันที่สิ้นสุด<span class="text-danger mx-1">*</span></span><input class="form-control mt-1" type="text" value="">
+                                    </div>   -->
+                                    <div class="col-12 col-md-6 d-flex align-items-center mb-3">
+                                        <span class="wpx-150">คำค้นหา<span class="text-danger mx-1">*</span></span><input class="form-control mt-1" type="text" value="">
+                                    </div>  
+                                    <div class="col-12 col-md-6 d-flex align-items-center mb-3">
+                                        <span class="wpx-150">รูปที่เกี่ยวข้อง<span class="text-danger mx-1">*</span></span> 
+                                        <input class="form-control mt-1" type="file" id="formFile">
+                                    </div>  
+                                    <div class="col-10 col-md-6 d-flex align-items-center mb-3">
+                                        <span class="wpx-150">ลิ้งวีดีโอที่เกี่ยวข้อง </span><input class="form-control mt-1" type="text" value="">
+                                        <a href="lms-create.html" class="btn btn-primary mx-1 update pt-2"><label class="icon">+</label></a>
+                                    </div> 
+
+                                </div> 
+                                <hr>
+                                
+
+                                <div class="d-flex mx-0 align-items-center justify-content-between test mb-3">
+                                    <h5 class="mb-3"><b>แบบทดสอบความเข้าใจ</b></h5>
+                                </div>
+
+                                <div class="border p-4"> 
+                                    
+                                    <a href="lms-create.html" class="btn btn-primary mx-1 update pt-2"><label class="icon">+</label>เพิ่มคำถาม</a>
+                                    <hr>
+                                    <div class="row mt-3">
+                                        <div class="col-12 col-md-12 d-flex align-items-center mb-3">
+                                            <span class="wpx-150">ข้อที่ 1<span class="text-danger ">*</span></span><input class="form-control mt-1" type="text" value=""> 
+                                            <a href="lms-create.html" class="btn btn-danger mx-1 update pt-2"><label class="icon"><i class="fal fa-trash-alt"></i></label></a>
+                                        </div> 
+                                        <div class="col-12 col-md-1">&nbsp;</div>
+                                        <div class="col-12 col-md-10 ps-5">
+                                            <div class="row">
+                                                <div class="col-12 col-md-3 d-flex align-items-center mb-3">
+                                                    <span class="wpx-150">ตัวเลือก 1<span class="text-danger ">*</span></span><input class="form-control mt-1" type="text" value="">
+                                                </div> 
+                                                <div class="col-12 col-md-3 d-flex align-items-center mb-3">
+                                                    <span class="wpx-150">ตัวเลือก 2<span class="text-danger ">*</span></span><input class="form-control mt-1" type="text" value="">
+                                                </div> 
+                                                <div class="col-12 col-md-3 d-flex align-items-center mb-3">
+                                                    <span class="wpx-150">ตัวเลือก 3<span class="text-danger ">*</span></span><input class="form-control mt-1" type="text" value="">
+                                                </div> 
+                                                <div class="col-12 col-md-3 d-flex align-items-center mb-3">
+                                                    <span class="wpx-150">ตัวเลือก 4<span class="text-danger ">*</span></span><input class="form-control mt-1" type="text" value="">
+                                                </div> 
+                                            </div>
+                                       </div>
+                                    </div>
+
+                                    <div class="row mt-3">
+                                        <div class="col-12 col-md-12 d-flex align-items-center mb-3">
+                                            <span class="wpx-150">ข้อที่ 2<span class="text-danger ">*</span></span><input class="form-control mt-1" type="text" value="">
+                                            <a href="lms-create.html" class="btn btn-danger mx-1 update pt-2"><label class="icon"><i class="fal fa-trash-alt"></i></label></a>
+                                        </div> 
+                                        <div class="col-12 col-md-1">&nbsp;</div>
+                                        <div class="col-12 col-md-10 ps-5">
+                                            <div class="row">
+                                                <div class="col-12 col-md-3 d-flex align-items-center mb-3">
+                                                    <span class="wpx-150">ตัวเลือก 1<span class="text-danger ">*</span></span><input class="form-control mt-1" type="text" value="">
+                                                </div> 
+                                                <div class="col-12 col-md-3 d-flex align-items-center mb-3">
+                                                    <span class="wpx-150">ตัวเลือก 2<span class="text-danger ">*</span></span><input class="form-control mt-1" type="text" value="">
+                                                </div> 
+                                                <div class="col-12 col-md-3 d-flex align-items-center mb-3">
+                                                    <span class="wpx-150">ตัวเลือก 3<span class="text-danger ">*</span></span><input class="form-control mt-1" type="text" value="">
+                                                </div> 
+                                                <div class="col-12 col-md-3 d-flex align-items-center mb-3">
+                                                    <span class="wpx-150">ตัวเลือก 4<span class="text-danger ">*</span></span><input class="form-control mt-1" type="text" value="">
+                                                </div> 
+                                            </div>
+                                       </div>
+                                    </div>
+                                    
+                             
+                                    
+                                </div>
+
+                                 
+                            </div>
+                            <div class="row">
+                                <div class="col-12 col-sm-8 col-md-6 col-xl-5 col-xxl-4 mx-auto">
+                                    <div class="d-flex mt-5">
+                                        <div class="w-50 pe-1"><button type="button" class="btn btn-outline-primary w-100 mb-3">ยกเลิก</button></div>
+                                        <div class="w-50 ps-1"><button type="button" class="btn btn-primary w-100 mb-3">บันทึก</button></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+	
+	<script src="js/jquery.min.js"></script>
+	<script src="js/popper.min.js" ></script>
+	<script src="js/bootstrap.bundle.min.js"></script>
+
+	<script>
+        
+		$('.pro-menu .pro-menu-item').click(function(){     
+			$(".pro-menu .pro-menu-item").removeClass("active");
+			$(this).addClass("active");
+		}); 
+    </script>
+ 
+</body>
+</html>

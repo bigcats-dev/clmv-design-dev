@@ -1,0 +1,1096 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> ระบบ CLMV </title>
+	<link rel="icon" type="image/x-icon" href="https://clmv.servicesaes.com/favicon.ico">
+	<link href="css/bootstrap.min.css" rel="stylesheet"> 
+	<link href="css/main.css" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> 
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>  
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" /> 
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>  
+ 
+
+
+</head>
+<body> 
+    <div id="root">
+        <div class="w-100 min-vh-100 fade-in">
+            <div>
+                <div class="w-100 px-0 position-fixed d-flex justify-content-between bg-primary shadow px-4 py-2 body" style="height: 60px; z-index: 1010;">
+                    <div class="d-flex align-items-center">
+                        <label class="d-block d-lg-none d-xl-none me-3"><span class="icon text-white text-18 pointer"></span></label>
+                        <div class="d-none d-sm-none d-md-flex d-lg-flex d-xl-flex text-white"><small>หน้าหลัก</small><small class="ms-2"> &gt; รายการ QC</small><small class="ms-2"> &gt; ขอใบอนุญาตทำงานแรงงานต่างด้าว</small><small class="ms-2"></small></div>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-center">
+                        <div class="ps-3"><span class="me-2 align-items-center d-none d-sm-flex d-md-flex d-lg-flex d-xl-flex text-white">John Doe</span><small class="me-2 align-items-center d-none d-sm-flex d-md-flex d-lg-flex d-xl-flex text-white">admin_system@gmail.com</small></div>
+                        <div class="wpx-40 hpx-40 rounded-circle bg-secondary"><img src="https://clmv.servicesaes.com/static/media/logo.bc9cec12c29fa740a3ed.png" style="width: 40px;"></div>
+                        <div class="dropdowns">
+                            <span class="dropbtns pointer"><label class="icon text-18 p-2 text-white"><i class="fal fa-chevron-down"></i></label></span>
+                            <div class="dropdowns-content wpx-250 bg-white"><a class="pointer"><label class="icon mx-2"><i class="fal fa-sign-out-alt"></i></label>ออกจากระบบ</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pro-sidebar full-screen pt-0 lg toggled">
+                    <div class="pro-sidebar-inner">
+                        <div class="pro-sidebar-layout">
+                            <div class="d-flex justify-content-center pt-2"><img src="https://clmv.servicesaes.com/static/media/logo.bc9cec12c29fa740a3ed.png" style="width: 170px;"></div>
+                            <div class="w-100 text-center mb-3"><small class="text-secondary">V.1.0.5</small></div>
+                           <nav class="pro-menu overflow-scroll none-scroll sidebar-h">
+                                <ul>  
+                                    <li class="pro-menu-item">
+                                        <div class="pro-inner-item" tabindex="0" role="button"><span class="pro-icon-wrapper"><span class="pro-icon"><i class="fal fa-file-alt"></i></span></span><span class="pro-item-content"><a href="index.html">รายการรับเรื่องทั้งหมด
+                                        </a></span></div>
+                                    </li>
+                                    <li class="pro-menu-item">
+                                        <div class="pro-inner-item" tabindex="0" role="button">
+                                            <span class="pro-icon-wrapper">
+                                                <span class="pro-icon">
+                                                    <i class="fal fa-file-alt"></i>
+                                                </span>
+                                            </span>
+                                            <span class="pro-item-content">
+                                                <a href="waiting.html">รายการรอยื่น <p>5</p></a>
+                                            </span>
+                                        </div>
+                                    </li>
+                                    <li class="pro-menu-item ">
+                                        <div class="pro-inner-item" tabindex="0" role="button"><span class="pro-icon-wrapper"><span class="pro-icon"><i class="fal fa-file-alt"></i></span></span><span class="pro-item-content"><a href="quotations.html">ใบเสนอราคา</a></span></div>
+                                    </li>  
+                                    <li class="pro-menu-item">
+                                        <div class="pro-inner-item" tabindex="0" role="button"><span class="pro-icon-wrapper"><span class="pro-icon"><i class="fal fa-file-alt"></i></span></span><span class="pro-item-content"><a href="invoice-list.html">รายการใบแจ้งหนี้
+                                        </a></span></div>
+                                    </li> 
+                                    <li class="pro-menu-item">
+                                        <div class="pro-inner-item" tabindex="0" role="button"><span class="pro-icon-wrapper"><span class="pro-icon"><i class="fal fa-file-alt"></i></span></span><span class="pro-item-content"><a href="receipt-list.html">รายการใบเสร็จ
+                                        </a></span></div>
+                                    </li>
+                                    <li class="pro-menu-item">
+                                        <div class="pro-inner-item" tabindex="0" role="button"><span class="pro-icon-wrapper"><span class="pro-icon"><i class="fal fa-file-alt"></i></span></span><span class="pro-item-content"><a href="billing-note.html">Billing Note
+                                        </a></span></div>
+                                    </li>  
+                                    <li class="pro-menu-item active">
+                                        <div class="pro-inner-item" tabindex="0" role="button"><span class="pro-icon-wrapper"><span class="pro-icon"><i class="fal fa-file-alt"></i></span></span><span class="pro-item-content"><a href="qc-list.html">รายการ QC
+                                        </a></span></div>
+                                    </li>
+                                    <li class="pro-menu-item">
+                                        <div class="pro-inner-item" tabindex="0" role="button"><span class="pro-icon-wrapper"><span class="pro-icon"><i class="fal fa-file-alt"></i></span></span><span class="pro-item-content"><a href="lms.html">ระบบ LMS</a></span></div>
+                                    </li>
+                                    <li class="pro-menu-item ">
+                                        <div class="pro-inner-item" tabindex="0" role="button"><span class="pro-icon-wrapper"><span class="pro-icon"><i class="fal fa-user"></i></span></span><span class="pro-item-content"><a href="employer-list.html">ทะเบียนนายจ้าง</a></span></div>
+                                    </li>
+                                    <li class="pro-menu-item">
+                                        <div class="pro-inner-item" tabindex="0" role="button"><span class="pro-icon-wrapper"><span class="pro-icon"><i class="fal fa-file-alt"></i></span></span><span class="pro-item-content"><a href="worker-list.html">ทะเบียนลูกจ้าง</a></span></div>
+                                    </li>
+                                    
+                                    <li class="pro-menu-item">
+                                        <div class="pro-inner-item" tabindex="0" role="button"><span class="pro-icon-wrapper"><span class="pro-icon"><i class="fal fa-user-tie"></i></span></span><span class="pro-item-content"><a href="sales-list.html">ฝ่ายการขาย</a></span></div>
+                                    </li>
+                                    <li class="pro-menu-item">
+                                        <div class="pro-inner-item" tabindex="0" role="button"><span class="pro-icon-wrapper"><span class="pro-icon"><i class="fal fa-user-tie"></i></span></span><span class="pro-item-content"><a href="quotations-requests.html">ตัวแทน</a></span></div>
+                                    </li>
+                                    <li class="pro-menu-item">
+                                        <div class="pro-inner-item" tabindex="0" role="button">
+                                            <span class="pro-icon-wrapper">
+                                                <span class="pro-icon"><i class="fal fa-file-alt"></i></span>
+                                            </span>
+                                            <span class="pro-item-content"><a href="#">รายงาน</a></span>
+                                        </div> 
+                                        <ul>  
+                                            <li class="pro-menu-item">
+                                                <div class="pro-inner-item"> 
+                                                    <a href="report1.html">รายงานแจ้งเตือนหมดอายุ </a>
+                                                </div>
+                                            </li> 
+                                            <li class="pro-menu-item">
+                                                <div class="pro-inner-item"> 
+                                                    <a href="report-mou.html">สรุปนำเข้าแรงงาน MOU ประจำเดือน </a>
+                                                </div>
+                                            </li> 
+                                            <!-- <li class="pro-menu-item">
+                                                <div class="pro-inner-item"> 
+                                                    <a href="report.html">รายงาน</a>
+                                                </div>
+                                            </li>  -->
+                                        </ul>  
+                                    </li>
+                                    <!--  <li class="pro-menu-item">
+                                        <div class="pro-inner-item" tabindex="0" role="button"><span class="pro-icon-wrapper"><span class="pro-icon"><i class="fal fa-file-alt"></i></span></span><span class="pro-item-content"><a href="planning.html">Planning</a></span></div>
+                                    </li> -->
+                                    <!-- <li class="pro-menu-item">
+                                        <div class="pro-inner-item" tabindex="0" role="button"><span class="pro-icon-wrapper"><span class="pro-icon"><i class="fal fa-download"></i></span></span><span class="pro-item-content"><a href="#">ดาวน์โหลดไฟล์</a></span></div>
+                                    </li> -->
+                                    <li class="pro-menu-item">
+                                        <div class="pro-inner-item" tabindex="0" role="button">
+                                            <span class="pro-icon-wrapper">
+                                                <span class="pro-icon"><i class="fal fa-cog"></i></span>
+                                            </span>
+                                            <span class="pro-item-content"><a href="#">การตั้งค่า</a></span>
+                                        </div> 
+                                        <ul>   
+                                            <li class="pro-menu-item">
+                                                <div class="pro-inner-item"> 
+                                                    <a href="profile.html">จัดการบัญชีระบบ</a>
+                                                </div>
+                                            </li>  
+                                            <li class="pro-menu-item">
+                                                <div class="pro-inner-item"> 
+                                                    <a href="menu-work.html">จัดการเมนูรายการรับเรื่อง</a>
+                                                </div>
+                                            </li> 
+                                             
+                                            <li class="pro-menu-item">
+                                                <div class="pro-inner-item"> 
+                                                    <a href="expiration-notification.html">การแจ้งเตือนหมดอายุเอกสาร</a>
+                                                </div>
+                                            </li>  
+                                           <li class="pro-menu-item">
+                                                <div class="pro-inner-item"> 
+                                                    <a href="issue-number.html">การออกเลขเรื่อง</a>
+                                                </div>
+                                            </li>   
+                                            <!-- <li class="pro-menu-item">
+                                                <div class="pro-inner-item"> 
+                                                    <a href="doc-number.html">การออกเลขเอกสาร</a>
+                                                </div>
+                                            </li> -->   
+                                            <li class="pro-menu-item">
+                                                <div class="pro-inner-item"> 
+                                                    <a href="lms-list.html">จัดการระบบ LMS</a>
+                                                </div>
+                                            </li>
+                                            <li class="pro-menu-item">
+                                                <div class="pro-inner-item"> 
+                                                    <a href="lms-category.html">จัดการหมวดหมู่ระบบ LMS</a>
+                                                </div>
+                                            </li>
+                                            <!-- <li class="pro-menu-item">
+                                                <div class="pro-inner-item"> 
+                                                    <a href="manage-quotations.html">จัดการใบเสนอราคา</a>
+                                                </div>
+                                            </li>  --> 
+                                            <li class="pro-menu-item">
+                                                <div class="pro-inner-item"> 
+                                                    <a href="service-types.html">จัดการประเภทบริการ</a>
+                                                </div>
+                                            </li> 
+                                            <li class="pro-menu-item">
+                                                <div class="pro-inner-item"> 
+                                                    <a href="service-price.html">จัดการอัตราค่าบริการ</a>
+                                                </div>
+                                            </li>
+                                            <li class="pro-menu-item">
+                                                <div class="pro-inner-item"> 
+                                                    <a href="employment.html">รายชื่อสำนักงานจัดหางาน</a>
+                                                </div>
+                                            </li>
+                                            <li class="pro-menu-item">
+                                                <div class="pro-inner-item"> 
+                                                    <a href="document.html">ชื่อเอกสาร</a>
+                                                </div>
+                                            </li>
+                                            <li class="pro-menu-item">
+                                                <div class="pro-inner-item"> 
+                                                    <a href="delivery.html">การส่งเอกสาร</a>
+                                                </div>
+                                            </li>
+                                            <li class="pro-menu-item">
+                                                <div class="pro-inner-item"> 
+                                                    <a href="bank-account.html">บัญชีธนาคาร</a>
+                                                </div>
+                                            </li>
+                                            <li class="pro-menu-item">
+                                                <div class="pro-inner-item"> 
+                                                    <a href="title-header.html">หัวกระดาษ</a>
+                                                </div>
+                                            </li> 
+                                        </ul>  
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="overlay" role="button" tabindex="0" aria-label="overlay"></div>
+                </div>
+            </div>
+            <div class="body bg-light min-vh-100">
+                <div class="p-3">
+                    <div class="d-flex mx-0 align-items-center justify-content-between test mb-3">
+                        <h3 class="mb-3"><b>รายการ QC</b></h3>  
+                    </div>
+                    <div class="w-100 card border-0 p-0">
+                        <div class="d-flex mx-0 px-3 pt-3"><input class="form-control wpx-250 bg-contain border-0 mx-1 mb-3" type="text" placeholder="กรอกข้อมูล" value=""><button class="btn btn-primary mx-1 mb-3">ค้นหา</button><button class="btn btn-outline-primary mx-1 mb-3">รีเซ็ต</button></div>
+                        <div class="table-responsive">
+                            <table class="table table-borderless table-striped">
+                                <thead class="bg-primary">
+                                    <tr>
+                                        <th class="text-center text-white">ลำดับ</th>
+                                        <th class="text-left text-white">วันที่รับเรื่อง</th>
+                                        <th class="text-left text-white">เลขเรื่อง</th>
+                                        <th class="text-left text-white">ลูกค้า</th>
+                                        <th class="text-left text-white">ดำเนินการเรื่อง</th>
+                                        <th class="text-left text-white">ผู้บันทึกข้อมูล</th> 
+                                        <th class="text-left text-white">สถานะ</th> 
+                                        <th class="text-center text-white update">จัดการ</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="text-center">1</td>
+                                        <td class="text-left">28/02/2567</td>
+                                        <td class="text-left">WJ-01021230800001</td>
+                                        <td class="text-left">บจก.ไทยฟูตด์</td> 
+                                        <td class="text-left">นำเข้าแรงงานต่างด้าว (MOU)</td>
+                                        <td class="text-left">สุปรียา	</td> 
+                                        <td class="text-left">
+                                            มอบอำนาจ Matching
+                                            
+                                            
+                                        </td>  
+                                        <td class="text-center update">
+                                            <div class="w-100 d-flex justify-content-center">
+                                                <a href="job-1.html">
+                                                    <div class="pointer wpx-30 hpx-30 rounded bg-primary-light mx-1 d-flex justify-content-center align-items-center"><label class="pointer icon text-primary p-2"><i class="fal fa-eye"></i></label></div> 
+                                                </a>
+                                                <div class="pointer hpx-30 rounded bg-danger-light mx-1 d-flex justify-content-center align-items-center" data-bs-toggle="modal" data-bs-target="#myModal2"><label class="pointer icon text-primary p-2"><i class="fal fa-edit"></i></label></div> 
+                                                <div class="pointer hpx-30 rounded bg-cyan-light mx-1 d-flex justify-content-center align-items-center">
+                                                    <label class="pointer text-primary p-2">ใบมอบอำนาจ</label> 
+                                                </div>  
+                                            </div>
+                                        </td>
+                                    </tr> 
+                                    <tr>
+                                        <td class="text-center">2</td>
+                                        <td class="text-left">28/02/2567</td>
+                                        <td class="text-left">WJ-01021230800001</td>
+                                        <td class="text-left">บจก.เดทตอล</td>
+                                        <td class="text-left">นำเข้าแรงงานต่างด้าว (MOU)</td>
+                                        <td class="text-left">สุปรียา	</td> 
+                                        <td class="text-left">Machting ไม่ได้</td> 
+                                        <td class="text-center update">
+                                            <div class="w-100 d-flex justify-content-center">
+                                                <a href="#">
+                                                    <div class="pointer wpx-30 hpx-30 rounded bg-primary-light mx-1 d-flex justify-content-center align-items-center"><label class="pointer icon text-primary p-2"><i class="fal fa-eye"></i></label></div> 
+                                                </a>
+                                                <div class="pointer hpx-30 rounded bg-danger-light mx-1 d-flex justify-content-center align-items-center" data-bs-toggle="modal" data-bs-target="#myModal"><label class="pointer icon text-primary p-2"><i class="fal fa-edit"></i></label></div> 
+                                            </div>
+                                        </td>
+                                    </tr> 
+                                    <tr>
+                                        <td class="text-center">3</td>
+                                        <td class="text-left">30/11/2566</td>
+                                        <td class="text-left">WJ-01021230800001</td>
+                                        <td class="text-left">บจก.ไทยฟูตด์</td>
+                                        <td class="text-left">นำเข้าแรงงานต่างด้าว (MOU)</td>
+                                        <td class="text-left">สุปรียา	</td> 
+                                        <td class="text-left">รอตรวจสอบ บต.46+มอบอำนาจ</td>  
+                                        <td class="text-center"> 
+                                            <div class="w-100 d-flex justify-content-center">
+                                                <a href="#">
+                                                    <div class="pointer wpx-30 hpx-30 rounded bg-primary-light mx-1 d-flex justify-content-center align-items-center"><label class="pointer icon text-primary p-2"><i class="fal fa-eye"></i></label></div> 
+                                                </a>
+                                                <div class="pointer hpx-30 rounded bg-danger-light mx-1 d-flex justify-content-center align-items-center" data-bs-toggle="modal" data-bs-target="#myModal14"><label class="pointer icon text-primary p-2"><i class="fal fa-edit"></i></label></div> 
+                                            </div> 
+                                        </td> 
+                                    </tr>  
+                                    <!-- <tr>
+                                        <td class="text-center">4</td>
+                                        <td class="text-left">01/12/2566</td>
+                                        <td class="text-left">WJ-01021230800001</td>
+                                        <td class="text-left">บจก.ไทยฟูตด์</td>
+                                        <td class="text-left">นำเข้าแรงงานต่างด้าว (MOU)</td>
+                                        <td class="text-left">สุปรียา	</td> 
+                                        <td class="text-left">รอตรวจเอกสารครั้งสุดท้าย</td>  
+                                        <td class="text-center"> 
+                                            <div class="w-100 d-flex justify-content-center">
+                                                <a href="#">
+                                                    <div class="pointer wpx-30 hpx-30 rounded bg-primary-light mx-1 d-flex justify-content-center align-items-center"><label class="pointer icon text-primary p-2"><i class="fal fa-eye"></i></label></div> 
+                                                </a>
+                                                <div class="pointer hpx-30 rounded bg-danger-light mx-1 d-flex justify-content-center align-items-center" data-bs-toggle="modal" data-bs-target="#myModal14"><label class="pointer icon text-primary p-2"><i class="fal fa-edit"></i></label></div> 
+                                            </div>  
+                                        </td> 
+                                    </tr>    -->
+                                    <!-- <tr>
+                                        <td class="text-center">4</td>
+                                        <td class="text-left">01/12/2566</td>
+                                        <td class="text-left">WJ-01021230800001</td>
+                                        <td class="text-left">บจก.ไทยฟูตด์</td>
+                                        <td class="text-left">นำเข้าแรงงานต่างด้าว (MOU)</td>
+                                        <td class="text-left">สุปรียา	</td> 
+                                        <td class="text-left">รอตรวจสอบ บต.50</td>  
+                                        <td class="text-center"> 
+                                            <div class="w-100 d-flex justify-content-center">
+                                                <a href="#">
+                                                    <div class="pointer wpx-30 hpx-30 rounded bg-primary-light mx-1 d-flex justify-content-center align-items-center"><label class="pointer icon text-primary p-2"><i class="fal fa-eye"></i></label></div> 
+                                                </a>
+                                                <div class="pointer hpx-30 rounded bg-danger-light mx-1 d-flex justify-content-center align-items-center" data-bs-toggle="modal" data-bs-target="#myModal22"><label class="pointer icon text-primary p-2"><i class="fal fa-edit"></i></label></div> 
+                                            </div>   
+                                        </td> 
+                                    </tr>   -->
+                                    
+                                </tbody>
+                            </table>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="myModal">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content"> 
+                <div class="modal-header">
+                    <h4 class="modal-title">Machting</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div> 
+                <div class="modal-body">
+                    <div class="row mt-3">
+
+                        <div class="col-12 col-md-12 d-flex align-items-center">  
+                            <input type="radio" name="customer" id="customerGroupId_1" value="1">
+                            <label for="customerGroupId_1">&nbsp;ใช้ User ของนายจ้าง  </label> 
+                        </div> 
+                        
+                        <div class="box1 d-none">
+                            <div class="col-12">
+                                <div class="row">
+                                    <div class="col-6"> 
+                                        <label>User</label>                                        
+                                        <input class="form-control mt-1" type="text">   
+                                    </div>
+                                    <div class="col-6"> 
+                                        <label>Password</label>                                        
+                                        <input class="form-control mt-1" type="password">   
+                                    </div>
+                                </div>
+                            </div>
+                        </div> 
+
+                        <div class="col-12 col-md-12 d-flex align-items-center">    
+                            <input type="radio" name="customer" id="customerGroupId_2" value="2">
+                            <label for="customerGroupId_2">&nbsp;มอบอำนาจ Matching </label>
+                        </div>   
+
+                        <br>
+                        <br> 
+                    </div>
+                </div> 
+                <div class="modal-footer">
+                    <div class="w-100 d-flex">
+                        <div class="w-50 pe-1">
+                            <button class="btn btn-outline-primary w-100">ยกเลิก</button>
+                        </div>
+                        <div class="w-50 ps-1">
+                            <button class="btn btn-primary w-100">บันทึก</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="myModal2">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content"> 
+                <div class="modal-header">
+                    <h4 class="modal-title">Machting</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div> 
+                <div class="modal-body">
+                    <div class="row mt-3">
+
+                        <div class="col-12 col-md-12 d-flex align-items-center">  
+                            <input type="radio" name="customer" id="customerGroupId_11" value="1">
+                            <label for="customerGroupId_11">&nbsp;ใช้ User ของนายจ้าง  </label> 
+                        </div> 
+                        
+                        <div class="box1 d-none">
+                            <div class="col-12">
+                                <div class="row">
+                                    <div class="col-6"> 
+                                        <label>User</label>                                        
+                                        <input class="form-control mt-1" type="text">   
+                                    </div>
+                                    <div class="col-6"> 
+                                        <label>Password</label>                                        
+                                        <input class="form-control mt-1" type="password">   
+                                    </div>
+                                </div>
+                            </div>
+                        </div> 
+
+                        <div class="col-12 col-md-12 d-flex align-items-center">    
+                            <input type="radio" name="customer" id="customerGroupId_22" value="2">
+                            <label for="customerGroupId_22">&nbsp;มอบอำนาจ Matching </label>
+                        </div>  
+
+                        <div class="box2 d-none">
+                            <div class="row">
+                                <div class="col-12 position-relative">                        
+                                    <label for="matc" class="ps-4" style="margin-top: -10px;">      
+                                        <input type="checkbox" id="matc" style="position: absolute;top: -10px;" >   
+                                        <span class="ps-4">Machting สำเร็จ</span>
+                                    </label> 
+                                </div> 
+                            </div>
+                        </div>
+
+                        <br>
+                        <br> 
+                    </div>
+                </div> 
+                <div class="modal-footer">
+                    <div class="w-100 d-flex">
+                        <div class="w-50 pe-1">
+                            <button class="btn btn-outline-primary w-100">ยกเลิก</button>
+                        </div>
+                        <div class="w-50 ps-1">
+                            <button class="btn btn-primary w-100">บันทึก</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="myModal11">
+        <div class="modal-dialog  modal-lg">
+            <div class="modal-content"> 
+                <div class="modal-header">
+                    <h4 class="modal-title">สถานะเอกสาร : รอตรวจเอกสารครั้งสุดท้าย</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div> 
+                <div class="modal-body"> 
+                    
+                    <div class="col-12 col-md-12 d-flex align-items-center mb-3">
+                        <span class="wpx-150">บต.46<span class="text-danger mx-1">*</span></span> 
+                        <a href="#" class="me-3"><i class="fal fa-file-pdf "></i> บต.46.pdf </a> วันที่แนบไฟล์ 30/11/2566 ผู้แนบไฟล์ สุปรียา
+                    </div> 
+
+                    <div class="col-12 col-md-12 d-flex align-items-center mb-3">
+                        <span class="wpx-150">ใบมอบอำนาจ<span class="text-danger mx-1">*</span></span> 
+                        <a href="#" class="me-3"><i class="fal fa-file-pdf "></i> ใบมอบอำนาจ.pdf </a> วันที่แนบไฟล์ 30/11/2566 ผู้แนบไฟล์ สุปรียา
+                    </div> 
+                    <hr>
+                    
+                    <div class="col-12 col-md-6 d-flex align-items-center mb-3"> 
+                        <input type="radio" name="doc" id="doc_1" value="1">
+                        <label for="doc_1">&nbsp;เอกสารถูกต้อง </label>
+
+                        <input type="radio" name="doc" id="doc_2" value="2" class="ms-2" >
+                        <label for="doc_2">&nbsp;เอกสารไม่ถูกต้อง </label>
+                    </div> 
+                    <div class="col-12 col-md-12  mb-3"> 
+                        <label class="mb-2">หมายเหตุ </label>
+                        <textarea  class="form-control" cols="30" rows="4"></textarea>
+                    </div> 
+
+
+                </div>
+                <div class="modal-footer">
+                    <div class="w-25 d-flex">
+                        <div class="w-50 pe-1">
+                            <button class="btn btn-outline-primary w-100">ยกเลิก</button>
+                        </div>
+                        <div class="w-50 ps-1">
+                            <button class="btn btn-primary w-100">บันทึก</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="myModal13">
+        <div class="modal-dialog  modal-lg">
+            <div class="modal-content"> 
+                <div class="modal-header">
+                    <h4 class="modal-title">สถานะเอกสาร </h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div> 
+                <div class="modal-body"> 
+                    
+                    <div class="d-flex">
+                        <div class="pointer rounded  hpx-30 wpx-130 bg-danger-light mx-1 d-flex justify-content-center align-items-center ">
+                            <label class="pointer text-primary p-2"><i class="fal fa-print"></i> พิมพ์ บต.46</label> 
+                        </div> 
+                        <div class="pointer rounded  hpx-30 wpx-130 bg-primary-light mx-1 d-flex justify-content-center align-items-center ">
+                            <label class="pointer text-primary p-2"><i class="fal fa-print"></i> พิมพ์ ใบมอบอำนาจ </label>
+                        </div> 
+                    </div>
+                    <hr>
+                    
+                    <div class="p-3 border">
+                        <div class="col-12 col-md-12 d-flex align-items-center mb-3">
+                            <span class="wpx-150">บต.46<span class="text-danger mx-1">*</span></span> 
+                            <a href="#" class="me-3"><i class="fal fa-file-pdf "></i> บต.46.pdf </a> วันที่แนบไฟล์ 30/11/2566 ผู้แนบไฟล์ สุปรียา
+                        </div> 
+    
+                        <div class="col-12 col-md-12 d-flex align-items-center mb-3">
+                            <span class="wpx-150">ใบมอบอำนาจ<span class="text-danger mx-1">*</span></span> 
+                            <a href="#" class="me-3"><i class="fal fa-file-pdf "></i> ใบมอบอำนาจ.pdf </a> วันที่แนบไฟล์ 30/11/2566 ผู้แนบไฟล์ สุปรียา
+                        </div> 
+                        <hr> 
+                        <div class="col-12 col-md-12 d-flex align-items-center mb-3">
+                            <span class="wpx-150">เอกสารถูกต้อง<span class="text-danger mx-1">*</span></span>   วันที่ตรวจสอบ 30/11/2566 ผู้ตรวจสอบ  อภิสรา  
+                            <i class="fal fa-check-circle text-success ms-2 fa-2x"></i>
+                        </div> 
+                    </div>
+
+                    <br>
+                    
+                    <div class="p-3 border">
+                        <h6><b>การจัดส่งเอกสาร</b></h6> <br>
+                        <div class="col-12 col-md-6 d-flex align-items-center mb-3">  
+                            ไปรษณีย์ ,  30/11/2566  สุปรียา
+                        </div>  
+                        <hr>
+                        <h6><b>ตรวจเอกสารครั้งสุดท้าย </b></h6> <br>
+                        <div class="col-12 col-md-12 d-flex align-items-center mb-3">
+                            <span  >เอกสาร  <span class="text-danger mx-1">*</span></span> 
+                            <a href="#" class="me-3"><i class="fal fa-file-pdf "></i> Doc01909.pdf </a> วันที่แนบไฟล์ 01/12/2566 ผู้แนบไฟล์ สุปรียา
+                        </div>
+ 
+                        <div class="col-12 col-md-6 d-flex align-items-center mb-3"> 
+                            <input type="radio" name="doc_2" id="doc_2_1" value="1">
+                            <label for="doc_2_1">&nbsp;เอกสารถูกต้อง </label>
+    
+                            <input type="radio" name="doc_2" id="doc_2_2" value="2" class="ms-2" >
+                            <label for="doc_2_2">&nbsp;เอกสารไม่ถูกต้อง </label>
+                        </div> 
+                        <div class="col-12 col-md-12  mb-3"> 
+                            <label class="mb-2">หมายเหตุ </label>
+                            <textarea  class="form-control" cols="30" rows="4"></textarea>
+                        </div> 
+    
+    
+                    </div>
+
+
+
+                </div>
+                <div class="modal-footer">
+                    <div class="w-25 d-flex">
+                        <div class="w-50 pe-1">
+                            <button class="btn btn-outline-primary w-100">ยกเลิก</button>
+                        </div>
+                        <div class="w-50 ps-1">
+                            <button class="btn btn-primary w-100">บันทึก</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="myModal22">
+        <div class="modal-dialog  " style="min-width: 800px">
+            <div class="modal-content"> 
+                <div class="modal-header">
+                    <h4 class="modal-title">สถานะการยื่นเรื่อง </h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div> 
+                <div class="modal-body">   
+                    <div class="col-12 col-md-12 d-flex align-items-center mb-3"> 
+                        <span class="wpx-150">เลข WP  :</span>  
+                        <span class="wpx-150">WP1102-01-1101</span>
+                        วันที่บันทึก 01/12/2566 ผู้บันทึก จอม  
+                    </div>    
+
+                    <hr>
+                    
+                    <div class="col-12 col-md-12 d-flex align-items-center mb-3">
+                        <span class="wpx-150">บต.50<span class="text-danger mx-1">*</span></span> 
+                        <a href="#" class="me-3"><i class="fal fa-file-pdf "></i> บต.50.pdf </a> วันที่แนบไฟล์ 30/11/2566 ผู้แนบไฟล์ สุปรียา
+                    </div> 
+
+                    <div class="col-12 col-md-12 d-flex align-items-center mb-3">
+                        <span class="wpx-150">ใบชำระค่าทำเนียบ<span class="text-danger mx-1">*</span></span> 
+                        <a href="#" class="me-3"><i class="fal fa-file-pdf "></i> ใบชำระค่าทำเนียบ.pdf </a> วันที่แนบไฟล์ 30/11/2566 ผู้แนบไฟล์ สุปรียา
+                    </div> 
+                    <hr>
+                    
+                    <div class="col-12 col-md-12 d-flex align-items-center mb-3"> 
+                        <input type="radio" name="wp_2" id="wp_2_1" value="1" checked>
+                        <label for="wp_2_1">&nbsp;อนุมัติ </label>
+
+                        <input type="radio" name="wp_2" id="wp_2_2" value="2" class="ms-2" >
+                        <label for="wp_2_2">&nbsp;เอกสารไม่ถูกต้อง </label>
+                    </div> 
+                    <div class="col-12 col-md-12  mb-3"> 
+                        <label class="mb-2">หมายเหตุ </label>
+                        <textarea  class="form-control" cols="30" rows="4">-</textarea>
+                    </div> 
+
+                </div>
+                <div class="modal-footer">
+                    <div class="w-100 d-flex">
+                        <div class="w-50 pe-1">
+                            <button class="btn btn-outline-primary w-100">ยกเลิก</button>
+                        </div>
+                        <div class="w-50 ps-1">
+                            <button class="btn btn-primary w-100">บันทึก</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="myModal14">
+        <div class="modal-dialog  modal-lg">
+            <div class="modal-content"> 
+                <div class="modal-header">
+                    <h4 class="modal-title">สถานะงาน </h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div> 
+                <div class="modal-body"> 
+                    
+                   
+                    <div class="accordion" id="regularAccordionRobots">
+                        <div class="accordion-item">
+                            <h2 id="tab121x" class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#tab121" aria-expanded="true" aria-controls="tab121">
+                                    ข้อมูลนายจ้าง บริษัท ไทยฟู้ดส์ กรุ๊ป จำกัด (มหาชน)	
+                                </button>
+                            </h2>
+                            <div id="tab121" class="accordion-collapse collapse" aria-labelledby="tab121x" data-bs-parent="#regularAccordionRobots"> 
+                                <div class="accordion-body"> 
+                                    <a href="job-1.html" style="text-decoration: none;">
+                                        <div class="pointer rounded wpx-120  hpx-30 bg-primary-light mx-1 d-flex justify-content-center align-items-center ">
+                                            <label class="pointer text-primary p-2">แก้ไขข้อมูลนายจ้าง</label>
+                                        </div> 
+                                    </a><br>
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="row mb-3">
+                                                <label class="col-6"><b>เลขนิติบุคคล/ เลขประจำตัวผู้เสียภาษี(13 หลัก)*</b></label>
+                                                <label class="col-6">DM20175264728</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="row mb-3">
+                                                <label class="col-4"><b>English</b></label>
+                                                <label class="col-8">Thai Food Co.,Ltd.</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="row mb-3">
+                                                <label class="col-4"><b>ประเภทนายจ้าง</b></label>
+                                                <label class="col-8">นิติบุคคลไทย</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="row mb-3">
+                                                <label class="col-4"><b>จดทะเบียนเมื่อ</b></label>
+                                                <label class="col-8">18/03/2563</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="row mb-3">
+                                                <label class="col-4"><b>ทุนจดทะเบียน(บาท)  	</b></label>
+                                                <label class="col-8">1,111,110.00</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="row mb-3">
+                                                <label class="col-4"><b>ประเภทกิจการ  	</b></label>
+                                                <label class="col-8">ซื้อและขายการประมง</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="row mb-3">
+                                                <label class="col-4"><b>ชื่อผู้ติดต่อ  	</b></label>
+                                                <label class="col-8">-</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="row mb-3">
+                                                <label class="col-4"><b>หมายเลขโทรศัพท์</b></label>
+                                                <label class="col-8">098763632</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="row mb-3">
+                                                <label class="col-4"><b>หมายเลขโทรสาร</b></label>
+                                                <label class="col-8">098763632</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="row mb-3">
+                                                <label class="col-4"><b>หมายเลขโทรศัพท์มือถือ</b></label>
+                                                <label class="col-8">08182019876</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="row mb-3">
+                                                <label class="col-4"><b>E-mail Address</b></label>
+                                                <label class="col-8">-</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="row mb-3">
+                                                <label class="col-4"><b>เลขรหัสประจำบ้าน ๑๑ หลัก</b></label>
+                                                <label class="col-8">-</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12">
+                                            <div class="row mb-3">
+                                                <label class="col-2"><b>ที่ตั้ง/ที่อยู่</b></label>
+                                                <label class="col-10">39/568  หมู่3 ซอยพระยาสุเรนทร์40 ถนนพระยาสุเรนทร์ ตำบลทุ่งไทรทอง อำเภอลำทับ จังหวัดกระบี่ 10510</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12">
+                                            <div class="row mb-3">
+                                                <label class="col-2"><b>ที่ตั้ง/ที่อยู่ (English)</b></label>
+                                                <label class="col-10">39/568  Soi Prayasurain40 Road Prayasurain Thung Sai Thong Lam Thap Krabi 10510</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="row mb-3">
+                                                <label class="col-4"><b>หมายเลขโทรศัพท์    	</b></label>
+                                                <label class="col-8">02-9278765</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="row mb-3">
+                                                <label class="col-4"><b>หมายเลขโทรสาร</b></label>
+                                                <label class="col-8">02-9278765</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="row mb-3">
+                                                <label class="col-4"><b>ผู้มีอำนาจผูกพัน  	</b></label>
+                                                <label class="col-8">Miss.EIM Ka</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="row mb-3">
+                                                <label class="col-4"><b>ตำแหน่ง  </b></label>
+                                                <label class="col-8">CCC</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="row mb-3">
+                                                <label class="col-4"><b>ผู้มีอำนาจผูกพัน (English)</b></label>
+                                                <label class="col-8">EIM Ka</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="row mb-3">
+                                                <label class="col-4"><b>ตำแหน่ง(English)  	</b></label>
+                                                <label class="col-8">CCC</label>
+                                            </div>
+                                        </div> 
+                                    </div> 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="tab1-0x">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOnb" aria-expanded="true" aria-controls="collapseOnb">
+                                    <span class="wpx-140">30/11/2566 14:31</span> <span class="wpx-100">สุปรียา</span>  <span>Matching</span>
+                                </button>
+                            </h2> 
+                            <div id="collapseOnb" class="accordion-collapse collapse" aria-labelledby="tab1-0x" data-bs-parent="#accordionExample">
+                                <div class="accordion-body"> 
+                                    <h6 class="mb-2">Matching  วันที่ 30/11/2566   สุปรียา</h6> 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="tab1-0">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOnx" aria-expanded="true" aria-controls="collapseOnx">
+                                    30/11/2566 14:31 จอม  บันทึกลูกจ้างสำเร็จ
+                                </button>
+                            </h2> 
+                            <div id="collapseOnx" class="accordion-collapse collapse" aria-labelledby="tab1-0" data-bs-parent="#accordionExample">
+                                <div class="accordion-body"> 
+                                    <h6 class="mb-2">บันทึกลูกจ้างสำเร็จ  วันที่ 30/11/2566   สุปรียา</h6> 
+                                </div>
+                            </div>
+                        </div> 
+                    </div>  
+                    
+                    <div class="p-3 border"> 
+                        <h6><b>ตรวจสอบ บต.46+มอบอำนาจ</b></h6> <br> 
+                        <!-- <div class="col-12 col-md-12 d-flex align-items-center mb-3">
+                            <span  >เอกสาร  <span class="text-danger mx-1">*</span></span> 
+                            <a href="#" class="me-3"><i class="fal fa-file-pdf "></i> Doc01909.pdf </a> วันที่แนบไฟล์ 01/12/2566 ผู้แนบไฟล์ สุปรียา
+                        </div>
+                        <div class="col-12 col-md-12 d-flex align-items-center mb-3">
+                            <span class="wpx-150">เอกสารถูกต้อง<span class="text-danger mx-1">*</span></span>   วันที่ตรวจสอบ 01/12/2566 ผู้ตรวจสอบ จอม  
+                            <i class="fal fa-check-circle text-success ms-2 fa-2x"></i>
+                        </div>   -->
+                    </div> 
+
+                    <div class="table-responsive">
+                        <table class="table table-borderless table-striped tablex">
+                            <thead class="bg-primary">
+                                <tr>
+                                    <th class="text-center text-white">ลำดับ</th>
+                                    <th class="text-left text-white">ชื่อ-นามสกุล</th>
+                                    <th class="text-left text-white">เลขบัตรประจำตัว</th>  
+                                    <th class="text-center text-white update">บต.46</th> 
+                                    <th class="text-center text-white update">ใบมอบอำนาจ</th> 
+                                    <th class="text-center text-white update" colspan="2">การตรวจสอบเอกสาร</th> 
+                                    <th class="text-center text-white update">หมายเหตุ</th> 
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="text-center">1</td>
+                                    <td class="text-left">ยาดานา</td> 
+                                    <td class="text-left">0107557000292</td>    
+                                    <td class="text-center"><a href="#" class="me-3"><i class="fal fa-file-pdf "></i> บต.46.pdf </a></td> 
+                                    <td class="text-center"><a href="#" class="me-3"><i class="fal fa-file-pdf "></i> ใบมอบอำนาจ.pdf </a></td>  
+                                    <td class="text-center">
+                                        <div class="d-flex">
+                                            <input type="radio" > 
+                                            <label for="" class="mt-2 pe-2">ถูกต้อง</label>
+                                        </div>
+                                    </td>  
+                                    <td class="text-center"> 
+                                        <div class="d-flex">
+                                            <input type="radio" >
+                                            <label for="" class="mt-2 pe-2">ไม่ถูกต้อง</label>
+                                        </div>
+                                    </td>  
+                                    <td class="text-center"> 
+                                        <div class="d-flex">
+                                            <input type="textbox" class="form-control" > 
+                                        </div>
+                                    </td>  
+                                </tr>  
+                                <tr>
+                                    <td class="text-center">2</td>
+                                    <td class="text-left">ยาดานา</td> 
+                                    <td class="text-left">0107557000292</td>
+                                    <td class="text-center"><a href="#" class="me-3"><i class="fal fa-file-pdf "></i> บต.46.pdf </a></td> 
+                                    <td class="text-center"><a href="#" class="me-3"><i class="fal fa-file-pdf "></i> ใบมอบอำนาจ.pdf </a></td>  
+                                    <td class="text-center">
+                                        <div class="d-flex">
+                                            <input type="radio" > 
+                                            <label for="" class="mt-2 pe-2">ถูกต้อง</label>
+                                        </div>
+                                    </td>  
+                                    <td class="text-center"> 
+                                        <div class="d-flex">
+                                            <input type="radio" >
+                                            <label for="" class="mt-2 pe-2">ไม่ถูกต้อง</label>
+                                        </div>
+                                    </td>  
+                                    <td class="text-center"> 
+                                        <div class="d-flex">
+                                            <input type="textbox" class="form-control" > 
+                                        </div>
+                                    </td>  
+                                </tr>  
+                                <tr>
+                                    <td class="text-center">3</td>
+                                    <td class="text-left">ยาดานา</td> 
+                                    <td class="text-left">0107557000292</td>     
+                                    <td class="text-center"><a href="#" class="me-3"><i class="fal fa-file-pdf "></i> บต.46.pdf </a></td> 
+                                    <td class="text-center"><a href="#" class="me-3"><i class="fal fa-file-pdf "></i> ใบมอบอำนาจ.pdf </a></td>  
+                                    <td class="text-center">
+                                        <div class="d-flex">
+                                            <input type="radio" > 
+                                            <label for="" class="mt-2 pe-2">ถูกต้อง</label>
+                                        </div>
+                                    </td>  
+                                    <td class="text-center"> 
+                                        <div class="d-flex">
+                                            <input type="radio" >
+                                            <label for="" class="mt-2 pe-2">ไม่ถูกต้อง</label>
+                                        </div>
+                                    </td>  
+                                    <td class="text-center"> 
+                                        <div class="d-flex">
+                                            <input type="textbox" class="form-control" > 
+                                        </div>
+                                    </td>  
+                                </tr>  
+                                <tr>
+                                    <td class="text-center">4</td>
+                                    <td class="text-left">ยาดานา</td> 
+                                    <td class="text-left">0107557000292</td>     
+                                    <td class="text-center"><a href="#" class="me-3"><i class="fal fa-file-pdf "></i> บต.46.pdf </a></td> 
+                                    <td class="text-center"><a href="#" class="me-3"><i class="fal fa-file-pdf "></i> ใบมอบอำนาจ.pdf </a></td>  
+                                    <td class="text-center">
+                                        <div class="d-flex">
+                                            <input type="radio" > 
+                                            <label for="" class="mt-2 pe-2">ถูกต้อง</label>
+                                        </div>
+                                    </td>  
+                                    <td class="text-center"> 
+                                        <div class="d-flex">
+                                            <input type="radio" >
+                                            <label for="" class="mt-2 pe-2">ไม่ถูกต้อง</label>
+                                        </div>
+                                    </td>  
+                                    <td class="text-center"> 
+                                        <div class="d-flex">
+                                            <input type="textbox" class="form-control" > 
+                                        </div>
+                                    </td>  
+                                </tr>  
+                                <tr>
+                                    <td class="text-center">5</td>
+                                    <td class="text-left">ยาดานา</td> 
+                                    <td class="text-left">0107557000292</td>     
+                                    <td class="text-center"><a href="#" class="me-3"><i class="fal fa-file-pdf "></i> บต.46.pdf </a></td>  
+                                    <td class="text-center"><a href="#" class="me-3"><i class="fal fa-file-pdf "></i> ใบมอบอำนาจ.pdf </a></td>  
+                                    <td class="text-center">
+                                        <div class="d-flex">
+                                            <input type="radio" > 
+                                            <label for="" class="mt-2 pe-2">ถูกต้อง</label>
+                                        </div>
+                                    </td>  
+                                    <td class="text-center"> 
+                                        <div class="d-flex">
+                                            <input type="radio" >
+                                            <label for="" class="mt-2 pe-2">ไม่ถูกต้อง</label>
+                                        </div>
+                                    </td>  
+                                    <td class="text-center"> 
+                                        <div class="d-flex">
+                                            <input type="textbox" class="form-control" > 
+                                        </div>
+                                    </td>  
+                                </tr>  
+                                
+                                
+                            </tbody>
+                        </table> 
+                        
+                    </div>   
+                    
+                </div>
+                <div class="modal-footer">
+                    <div class="w-25 d-flex">
+                        <div class="w-50 pe-1">
+                            <button class="btn btn-outline-primary w-100">ยกเลิก</button>
+                        </div>
+                        <div class="w-50 ps-1">
+                            <button class="btn btn-primary w-100">บันทึก</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+     
+    
+    <div class="modal fade" id="myModal23">
+        <div class="modal-dialog  " style="min-width: 800px">
+            <div class="modal-content"> 
+                <div class="modal-header">
+                    <h4 class="modal-title">สถานะการยื่นเรื่อง </h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div> 
+                <div class="modal-body">   
+                    <div class="col-12 col-md-12 d-flex align-items-center mb-3"> 
+                        <span class="wpx-150">เลข WP  :</span>  
+                        <span class="wpx-150">WP1102-01-1101</span>
+                        วันที่บันทึก 01/12/2566 ผู้บันทึก จอม  
+                    </div>    
+
+                    
+                    <div class="col-12 col-md-12 d-flex align-items-center mb-3">
+                        <span class="wpx-150">บต.50<span class="text-danger mx-1">*</span></span> 
+                        <a href="#" class="me-3"><i class="fal fa-file-pdf "></i> บต.50.pdf </a> วันที่แนบไฟล์ 30/11/2566 ผู้แนบไฟล์ สุปรียา
+                    </div> 
+
+                    <div class="col-12 col-md-12 d-flex align-items-center mb-3">
+                        <span class="wpx-150">ใบชำระค่าทำเนียบ<span class="text-danger mx-1">*</span></span> 
+                        <a href="#" class="me-3"><i class="fal fa-file-pdf "></i> ใบชำระค่าทำเนียบ.pdf </a> วันที่แนบไฟล์ 30/11/2566 ผู้แนบไฟล์ สุปรียา
+                    </div> 
+
+                    
+                    <div class="col-12 col-md-12 d-flex align-items-center mb-3">
+                        <span class="wpx-150">ใบเสร็จ<span class="text-danger mx-1">*</span></span> 
+                        <button class="btn btn-primary btn-sm">แนบไฟล์</button>  
+                    </div>
+                    <div class="col-12 col-md-12 d-flex align-items-center mb-3">
+                        <div class="wpx-150">&nbsp;</div> 
+                        <a href="#" class="me-3"><i class="fal fa-file-pdf "></i> ใบเสร็จ.pdf </a> วันที่แนบไฟล์ 30/11/2566 ผู้แนบไฟล์ สุปรียา
+                    </div>
+
+                    
+                    <div class="p-3 border">
+                        <div class="col-12 col-md-6 d-flex align-items-center mb-3"> 
+                            <div class="wpx-150">จัดส่งเอกสารให้ลูกค้า</div> 
+                            <input type="radio" name="drive" id="drive_1" value="1">
+                            <label for="drive_1">&nbsp;Line </label> 
+                            <input type="radio" name="drive" id="drive_2" value="2" class="ms-2" >
+                            <label for="drive_2">&nbsp;Messenger </label>
+                            <input type="radio" name="drive" id="drive_3" value="3" class="ms-2" >
+                            <label for="drive_3">&nbsp;ไปรษณีย์ </label>
+                        </div> 
+                    
+                        <div class="col-12 col-md-6 d-flex align-items-center mb-3 position-relative">
+                            <span class="wpx-150">วันที่ส่งเอกสาร<span class="text-danger mx-1">*</span></span>
+                            <input class="form-control mt-1" type="text"  >
+                            <i class="fal fa-calendar-alt iconi"></i>
+                        </div>
+                        <div class="col-12 col-md-12  mb-3"> 
+                            <label class="mb-2">หมายเหตุ </label>
+                            <textarea  class="form-control" cols="30" rows="4"></textarea>
+                        </div>  
+                    </div>
+                     
+
+                </div>
+                <div class="modal-footer">
+                    <div class="w-100 d-flex">
+                        <div class="w-50 pe-1">
+                            <button class="btn btn-outline-primary w-100">ยกเลิก</button>
+                        </div>
+                        <div class="w-50 ps-1">
+                            <button class="btn btn-primary w-100">บันทึก</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+	
+	<script src="js/jquery.min.js"></script>
+	<script src="js/popper.min.js" ></script>
+	<script src="js/bootstrap.bundle.min.js"></script>
+
+	<script>
+        
+		$('.pro-menu .pro-menu-item').click(function(){     
+			$(".pro-menu .pro-menu-item").removeClass("active");
+			$(this).addClass("active");
+		}); 
+
+        
+        $('input[type=radio][name=customer]').change(function() { 
+            if (this.value == "1") {
+                $(".box1").removeClass("d-none");   
+                $(".box1").addClass("d-flex");   
+                $(".box2").addClass("d-none");   
+            }
+            else if (this.value == "2") {  
+                $(".box2").removeClass("d-none");   
+                $(".box2").addClass("d-flex");   
+                $(".box1").addClass("d-none");    
+            }
+        });
+
+
+    </script>
+ 
+</body>
+</html>
