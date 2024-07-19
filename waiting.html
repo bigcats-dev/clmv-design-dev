@@ -356,7 +356,7 @@
                                         </td>  
                                         <td class="text-center update">
                                             <div class="w-100 d-flex justify-content-center">
-                                                <a href="#">
+                                                <a href="#" data-bs-toggle="modal" data-bs-target="#myModal">
                                                     <div class="pointer wpx-30 hpx-30 rounded bg-primary-light mx-1 d-flex justify-content-center align-items-center"><label class="pointer icon text-primary p-2"><i class="fal fa-eye"></i></label></div> 
                                                 </a> 
                                             </div>
@@ -379,7 +379,7 @@
                                         </td>  
                                         <td class="text-center update">
                                             <div class="w-100 d-flex justify-content-center">
-                                                <a href="#">
+                                                <a href="#" data-bs-toggle="modal" data-bs-target="#myModal">
                                                     <div class="pointer wpx-30 hpx-30 rounded bg-primary-light mx-1 d-flex justify-content-center align-items-center"><label class="pointer icon text-primary p-2"><i class="fal fa-eye"></i></label></div> 
                                                 </a> 
                                             </div>
@@ -402,7 +402,7 @@
                                         </td>  
                                         <td class="text-center update">
                                             <div class="w-100 d-flex justify-content-center">
-                                                <a href="#">
+                                                <a href="#" data-bs-toggle="modal" data-bs-target="#myModal">
                                                     <div class="pointer wpx-30 hpx-30 rounded bg-primary-light mx-1 d-flex justify-content-center align-items-center"><label class="pointer icon text-primary p-2"><i class="fal fa-eye"></i></label></div> 
                                                 </a> 
                                             </div>
@@ -425,7 +425,7 @@
                                         </td>  
                                         <td class="text-center update">
                                             <div class="w-100 d-flex justify-content-center">
-                                                <a href="#">
+                                                <a href="#" data-bs-toggle="modal" data-bs-target="#myModal">
                                                     <div class="pointer wpx-30 hpx-30 rounded bg-primary-light mx-1 d-flex justify-content-center align-items-center"><label class="pointer icon text-primary p-2"><i class="fal fa-eye"></i></label></div> 
                                                 </a> 
                                             </div>
@@ -448,7 +448,7 @@
                                         </td>  
                                         <td class="text-center update">
                                             <div class="w-100 d-flex justify-content-center">
-                                                <a href="#">
+                                                <a href="#" data-bs-toggle="modal" data-bs-target="#myModal">
                                                     <div class="pointer wpx-30 hpx-30 rounded bg-primary-light mx-1 d-flex justify-content-center align-items-center"><label class="pointer icon text-primary p-2"><i class="fal fa-eye"></i></label></div> 
                                                 </a> 
                                             </div>
@@ -458,6 +458,45 @@
                                 </tbody>
                             </table>
                         </div> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> 
+
+    <div class="modal fade" id="myModal">
+        <div class="modal-dialog modal-dialog-centered modal-md" style="min-width: 650px;">
+            <div class="modal-content"> 
+                <div class="modal-header">
+                    <h4 class="modal-title">เลือกพนักงานฝ่ายดำเนิการเอกสาร (Messenger)</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div> 
+                <div class="modal-body">
+                    <div class="row mt-3">   
+                        <div class="col-12 col-md-12 d-flex align-items-center mb-3">
+                            <span class="wpx-120">ชื่อพนักงาน <span class="text-danger mx-1">*</span></span>
+                            <select class="form-control mt-1">
+                                <option value="0" selected>--ชื่อพนักงาน--</option>
+                                <option value="1">อดิศร วิเศษ</option>
+                                <option value="1">เอกชัย มาดี</option>
+                                <option value="1">ธิติ พรมใจ</option>
+                                <option value="1">มานพ แก้วดี</option> 
+                            </select>  
+                        </div>   
+                        <div class="col-12 col-md-12 d-flex align-items-center mb-3">
+                            <span class="wpx-120">หมายเหตุ</span>
+                            <textarea name="" id="" class="form-control mt-1"></textarea> 
+                        </div>   
+                    </div>
+                </div> 
+                <div class="modal-footer">
+                    <div class="w-100 d-flex">
+                        <div class="w-50 pe-1">
+                            <button class="btn btn-outline-primary w-100" data-bs-dismiss="modal">ยกเลิก</button>
+                        </div>
+                        <div class="w-50 ps-1">
+                            <button class="btn btn-primary w-100">บันทึก</button>
+                        </div>
                     </div>
                 </div>
             </div>
