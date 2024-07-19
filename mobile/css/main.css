@@ -360,6 +360,12 @@ header .hx{
   margin-right: 4px;
   margin-top: 4px;
 } 
+.box-card .h .tag.tag2{ 
+  background-color: var(--bs-red); 
+} 
+.box-card .h .tag.tag3{ 
+  background-color: var(--bs-success); 
+} 
 .box-card .h p{
   font-size: 15px;
   float: right;
