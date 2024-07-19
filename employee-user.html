@@ -29,7 +29,12 @@
                 <div class="w-100 px-0 position-fixed d-flex justify-content-between bg-primary shadow px-4 py-2 body" style="height: 60px; z-index: 1010;">
                     <div class="d-flex align-items-center">
                         <label class="d-block d-lg-none d-xl-none me-3"><span class="icon text-white text-18 pointer"></span></label>
-                        <div class="d-none d-sm-none d-md-flex d-lg-flex d-xl-flex text-white"><small>หน้าหลัก</small><small class="ms-2"> &gt; การออกเลขเรื่อง</small><small class="ms-2"></small></div>
+                        <div class="d-none d-sm-none d-md-flex d-lg-flex d-xl-flex text-white">
+                            <small>หน้าหลัก</small>
+                            <small class="ms-2"> &gt; การตั้งค่า </small>
+                            <small class="ms-2"></small>
+                            <small class="ms-2"> &gt; รายชื่อสำนักงานจัดหางาน </small> 
+                        </div>
                     </div>
                     <div class="d-flex align-items-center justify-content-center">
                         <div class="ps-3"><span class="me-2 align-items-center d-none d-sm-flex d-md-flex d-lg-flex d-xl-flex text-white">John Doe</span><small class="me-2 align-items-center d-none d-sm-flex d-md-flex d-lg-flex d-xl-flex text-white">admin_system@gmail.com</small></div>
@@ -62,7 +67,7 @@
                                                 <a href="waiting.html">รายการรอยื่น <p>5</p></a>
                                             </span>
                                         </div>
-                                    </li>
+                                    </li> 
                                     <li class="pro-menu-item ">
                                         <div class="pro-inner-item" tabindex="0" role="button"><span class="pro-icon-wrapper"><span class="pro-icon"><i class="fal fa-file-alt"></i></span></span><span class="pro-item-content"><a href="quotations.html">ใบเสนอราคา</a></span></div>
                                     </li>  
@@ -156,7 +161,7 @@
                                                     <a href="expiration-notification.html">การแจ้งเตือนหมดอายุเอกสาร</a>
                                                 </div>
                                             </li>  
-                                            <li class="pro-menu-item active">
+                                           <li class="pro-menu-item">
                                                 <div class="pro-inner-item"> 
                                                     <a href="issue-number.html">การออกเลขเรื่อง</a>
                                                 </div>
@@ -165,7 +170,7 @@
                                                 <div class="pro-inner-item"> 
                                                     <a href="doc-number.html">การออกเลขเอกสาร</a>
                                                 </div>
-                                            </li> -->  
+                                            </li> -->   
                                             <li class="pro-menu-item">
                                                 <div class="pro-inner-item"> 
                                                     <a href="lms-list.html">จัดการระบบ LMS</a>
@@ -195,7 +200,7 @@
                                                 <div class="pro-inner-item"> 
                                                     <a href="employment.html">รายชื่อสำนักงานจัดหางาน</a>
                                                 </div>
-                                            </li> 
+                                            </li>
                                             <li class="pro-menu-item">
                                                 <div class="pro-inner-item"> 
                                                     <a href="document.html">ชื่อเอกสาร</a>
@@ -216,7 +221,7 @@
                                                     <a href="title-header.html">หัวกระดาษ</a>
                                                 </div>
                                             </li>
-                                            <li class="pro-menu-item">
+                                            <li class="pro-menu-item active">
                                                 <div class="pro-inner-item"> 
                                                     <a href="employee-user.html">จัดการพนักงาน</a>
                                                 </div>
@@ -240,142 +245,49 @@
                 <div class="p-3"> 
 
                     <div class="d-flex mx-0 align-items-center justify-content-between test mb-3">
-                        <h3 class="mb-3"><b>ตั้งค่าการออกเลขเรื่อง</b></h3>
+                        <h3 class="mb-3"><b>จัดการพนักงาน</b></h3>
                         <div class="d-flex">
-                            <button data-bs-toggle="modal" data-bs-target="#myModal" class="btn btn-primary mx-1 update pt-2"><label class="icon">+</label> เพิ่ม</ิ>
+                            <button data-bs-toggle="modal" data-bs-target="#myModal" class="btn btn-primary mx-1 update pt-2"><label class="icon">+</label> เพิ่มพนักงาน</button>
                         </div>
                     </div>
 
                     <div class="modal fade" id="myModal">
-                        <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-dialog modal-dialog-centered modal-md" style="min-width: 650px;">
                             <div class="modal-content"> 
                                 <div class="modal-header">
-                                    <h4 class="modal-title">เพิ่มการตั้งค่า</h4>
+                                    <h4 class="modal-title">เพิ่มฝ่ายการทำงาน</h4>
                                     <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                                 </div> 
                                 <div class="modal-body">
-                                    <div class="row mt-3">
-                                        <div class="col-12 col-md-12 d-flex align-items-center mb-3 position-relative">
-                                            <span class="wpx-120">ระบบ
+                                    <div class="row mt-3">  
+                                        <div class="col-12 col-md-12 d-flex align-items-center mb-3">
+                                            <span class="wpx-120">ชื่อ-นามสกุล
                                                 <span class="text-danger mx-1">*</span>
                                             </span>
-                                            <span class="wpx-220">ลักซ์ แพลนเนท จำกัด	
-                                                <span class="text-danger mx-1">*</span>
-                                            </span> 
+                                            <input class="form-control mt-1" type="text"   value="">   
                                         </div>  
-                                        <div class="col-12 col-md-12 d-flex align-items-center mb-3 position-relative">
-                                            <span class="wpx-120">ชื่อบริการ
+                                        <div class="col-12 col-md-12 d-flex align-items-center mb-3">
+                                            <span class="wpx-120">รหัสพนักงาน
                                                 <span class="text-danger mx-1">*</span>
                                             </span>
-                                            <select class="form-control mt-1"> 
-                                                <option value="0">--รายการรับเรื่องทั้งหมด--</option>
-                                                <option value="1" selected>ขอใบอนุญาตทำงานแรงงานต่างด้าว</option> 
-                                                <option value="2">ขอนำเข้าแรงงานต่างด้าว (MOU)</option> 
-                                                <option value="3">แจ้งอยู่เกิน 90 วัน (ตม.)</option> 
-                                                <option value="4">แจ้งอยู่เกิน 90 วัน + ต่อ Work </option> 
-                                                <option value="5">แจ้งอยู่เกิน 90 วัน + ต่อ VISA </option> 
-                                                <option value="6">แจ้งอยู่เกิน 90 วัน + ต่อ Work + ต่อ VISA</option> 
-                                                <option value="7">ต่อ Passport</option> 
-                                                <option value="8">แจ้งเข้าที่พัก (ตม.)</option> 
-                                                <option value="9">ย้ายดวงตรา VISA</option> 
-                                                <option value="10">เปลี่ยนเล่ม Passport</option> 
-                                                <option value="11">ต่ออายุใบอนุญาตทำงาน 1 ปี และ 2 ปี</option> 
-                                                <option value="12">แจ้งคนต่างด้าวออกจากงาน บต.53</option> 
-                                                <option value="13">แจ้งเข้าทำงานเปลี่ยนนายจ้าง</option> 
-                                                <option value="14">แก้ไขเปลี่ยนแปลงใบอนุญาตทำงาน บต.44,บต.46 (นายจ้างเดิมลูกจ้างเดิมยืนแก้ไขเพิ่มเติม)</option> 
-                                                <option value="15">เปลี่ยน/เพิ่ม ประเภทงาน เปลี่ยนจากงานอื่นมาเป็น กรรมกร กับ ขายของหน้าร้าน บต.22</option> 
-                                                <option value="16">เปลี่ยน/เพิ่ม ประเภทงาน เปลี่ยนหรือเพิ่มประเภทงานตามบัญชี 2,3 บต.45</option> 
-                                                <option value="17">ต่อ VISA 1 ปี/2 ปี (นำเข้า MOU และตามมติ ครม. ในประเทศ)</option> 
-                                                <option value="18">ตี VISA หน้าด่าน</option> 
-                                                <option value="19">ขึ้นทะเบียนแรงงานต่างต้าว มติ 5 ก.ค. 66 (คนเถื่อน)</option> 
-                                                <option value="20">ทำบัตรชมพู</option> 
-                                                <option value="21">ซื้อประกันคนงานต่างด้าว</option> 
-                                            </select>
-                                            <i class="fal fa-chevron-down iconi"></i>
-                                        </div>  
-                                        <div class="col-12 col-md-12 d-flex align-items-center mb-2">
-                                            <span class="wpx-120">
-                                                Prefix<span class="text-danger mx-1">*</span>
-                                            </span>
-                                            <input class="form-control mt-1" type="text" maxlength="10" value="LUX"> 
-                                        </div>  
+                                            <input class="form-control mt-1" type="text"   value="">   
+                                        </div>   
                                         <div class="col-12 col-md-12 d-flex align-items-center mb-3">
-                                            <span class="wpx-120">&nbsp; </span> 
-                                            <small class="d-block w-100">ใช้อักษรภาษาอังกฤษตัวพิมพ์ใหญ่</small>
-                                        </div>  
+                                            <span class="wpx-120">ฝ่ายการทำงาน <span class="text-danger mx-1">*</span></span>
+                                            <select class="form-control mt-1">
+                                                <option value="0" selected>--ฝ่ายการทำงาน--</option>
+                                                <option value="1">supervisor</option>
+                                                <option value="2">ฝ่ายเอกสาร</option>
+                                                <option value="3">ฝ่ายตรวจสอบเอกสาร</option>
+                                                <option value="4">ฝ่ายบัญชี</option>
+                                                <option value="4">ฝ่ายขาย</option>
+                                                <option value="4">ฝ่ายดำเนิการเอกสาร (Messenger)</option> 
+                                            </select>  
+                                        </div>   
                                         <div class="col-12 col-md-12 d-flex align-items-center mb-3">
-                                            <span class="wpx-120">
-                                                เลขบริการ<span class="text-danger mx-1">*</span>
-                                            </span>
-                                            <input class="form-control mt-1" type="text" maxlength="10" value="01">
-                                        </div> 
-                                        <div class="col-12 col-md-12 d-flex align-items-center mb-2"> 
-                                            <span class="wpx-120">
-                                                ปี<span class="text-danger mx-1">*</span>
-                                            </span>
-                                            <input type="radio" name="yearRa" id="yearRa_1" value="1" checked="checked">
-                                            <label for="yearRa_1">&nbsp;ใช้งาน</label>
-    
-                                            <input type="radio" name="yearRa" id="yearRa_2" value="2" class="ms-2">
-                                            <label for="yearRa_2">&nbsp;ไม่ใช้งาน </label> 
-                                        </div>
-                                        <div class="col-12 col-md-12 d-flex align-items-center mb-2 ddd"> 
-                                            <span class="wpx-120">&nbsp;</span> 
-                                            <input type="radio" name="yearType" id="yearType_1" value="1">
-                                            <label for="yearType_1">&nbsp;พ.ศ.</label>
-    
-                                            <input type="radio" name="yearType" id="yearType_2" value="2" class="ms-2" checked="checked">
-                                            <label for="yearType_2">&nbsp;ค.ศ. </label> 
-                                        </div>
-                                        <div class="col-12 col-md-12 d-flex align-items-center mb-2 ddd"> 
-                                            <span class="wpx-120">&nbsp;</span> 
-                                            <input type="radio" name="yearName" id="yearName_1" value="1">
-                                            <label for="yearName_1">&nbsp;ตัวย่อ</label>
-    
-                                            <input type="radio" name="yearName" id="yearName_2" value="2" class="ms-2" checked="checked">
-                                            <label for="yearName_2">&nbsp;ตัวเต็ม </label> 
-                                        </div>
-                                        <div class="col-12 col-md-12 d-flex align-items-center mb-3"> 
-                                            <span class="wpx-120">
-                                                เดือน<span class="text-danger mx-1">*</span>
-                                            </span>
-                                            <input type="radio" name="vat.m" id="vat_1" value="1" checked="checked">
-                                            <label for="vat_1">&nbsp;ใช้งาน</label>
-    
-                                            <input type="radio" name="vat.m" id="vat_2" value="2" class="ms-2">
-                                            <label for="vat_2">&nbsp;ไม่ใช้งาน </label>
-                                        </div>
-                                        <div class="col-12 col-md-12 d-flex align-items-center mb-3"> 
-                                            <span class="wpx-120">
-                                                วัน<span class="text-danger mx-1">*</span>
-                                            </span>
-                                            <input type="radio" name="vat.d" id="vat_1" value="1" >
-                                            <label for="vat_1">&nbsp;ใช้งาน</label>
-    
-                                            <input type="radio" name="vat.d" id="vat_2" value="2" class="ms-2" checked="checked">
-                                            <label for="vat_2">&nbsp;ไม่ใช้งาน </label>
-                                        </div>
-                                        <div class="col-12 col-md-12 d-flex align-items-center mb-3">
-                                            <span class="wpx-120">
-                                                Running Number<span class="text-danger mx-1">*</span>
-                                            </span>
-                                            <input class="form-control mt-1" type="text" maxlength="10" value="3">
-                                            ตัว
-                                        </div>
-                                        <div class="col-12 col-md-12 d-flex align-items-center mb-3"> 
-                                            <span class="wpx-120">
-                                                รันเลขใหม่<span class="text-danger mx-1">*</span>
-                                            </span>
-                                            <input type="radio" name="vat.r" id="vat.r1" value="1" checked="checked">
-                                            <label for="vat.r1">&nbsp;ทุกเดือน</label>
-    
-                                            <input type="radio" name="vat.r" id="vat.r2" value="2" class="ms-2">
-                                            <label for="vat.r2">&nbsp;ทุกปี </label> 
-                                        </div> 
-                                        <div class="col-12 col-md-12 d-flex align-items-center mb-3">
-                                            <h3> LUX 01 2024 02 001 </h3>
-                                        </div>
-
+                                            <span class="wpx-120">หมายเหตุ</span>
+                                            <textarea name="" id="" class="form-control mt-1"></textarea> 
+                                        </div>   
                                     </div>
                                 </div> 
                                 <div class="modal-footer">
@@ -395,27 +307,78 @@
                     <div class="w-100 card border-0 p-0">
                         <div class="d-flex mx-0 px-3 pt-3"><input class="form-control wpx-250 bg-contain border-0 mx-1 mb-3" type="text" placeholder="กรอกข้อมูล" value=""><button class="btn btn-primary mx-1 mb-3">ค้นหา</button><button class="btn btn-outline-primary mx-1 mb-3">รีเซ็ต</button></div>
                         <div class="table-responsive">
-                            <table class="table table-borderless table-striped" style="vertical-align: middle;">
+                            <table class="table table-borderless table-striped tb-num" style="vertical-align: middle;">
                                 <thead class="bg-primary">
                                     <tr>
                                         <th class="text-center text-white">ลำดับ</th>
-                                        <th class="text-left text-white">บัญชีระบบ</th> 
-                                        <th class="text-left text-white">ตัวอย่างเลขเรื่อง</th> 
-                                        <th class="text-left text-white">บริการ	</th> 
-                                        <th class="text-left text-white">วันที่สร้าง</th>   
-                                        <th class="text-left text-white">ผู้สร้าง</th>    
+                                        <th class="text-left text-white">ชื่อ-นามสกุล </th>  
+                                        <th class="text-center text-white">รหัสพนักงาน </th> 
+                                        <th class="text-center text-white">ฝ่ายการทำงาน </th> 
                                         <th class="text-center text-white update">จัดการ</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
                                         <td class="text-center">1</td>
-                                        <td class="text-left">ลักซ์ แพลนเนท จำกัด </td> 
-                                        <td class="text-left">LUXA012024020001</td> 
-                                        <td class="text-left">ขอใบอนุญาตทำงานแรงงานต่างด้าว</td> 
-                                        <td class="text-left">28/02/2567</td>  
-                                        <td class="text-left">อดิศร ศรีสุธรรม</td>    
-                                        <td class="text-center update">
+                                        <td class="text-left">Supervisor</td>  
+                                        <td class="text-center">LP00011</td>   
+                                        <td class="text-center">ฝ่ายเอกสาร</td>   
+                                        <td class="text-center">
+                                            <div class="w-100 d-flex justify-content-center">
+                                                <a href="#"><div class="pointer wpx-30 hpx-30 rounded bg-primary-light mx-1 d-flex justify-content-center align-items-center"><label class="pointer icon text-primary p-2"><i class="fal fa-edit"></i></label></div> </a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center">1</td>
+                                        <td class="text-left">สุปรียา</td>  
+                                        <td class="text-center">LP0001</td>   
+                                        <td class="text-center">ฝ่ายตรวจสอบเอกสาร</td>   
+                                        <td class="text-center">
+                                            <div class="w-100 d-flex justify-content-center">
+                                                <a href="#"><div class="pointer wpx-30 hpx-30 rounded bg-primary-light mx-1 d-flex justify-content-center align-items-center"><label class="pointer icon text-primary p-2"><i class="fal fa-edit"></i></label></div> </a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center">1</td>
+                                        <td class="text-left">สุปรียา</td>  
+                                        <td class="text-center">LP0001</td>   
+                                        <td class="text-center">ฝ่ายตรวจสอบเอกสาร</td>   
+                                        <td class="text-center">
+                                            <div class="w-100 d-flex justify-content-center">
+                                                <a href="#"><div class="pointer wpx-30 hpx-30 rounded bg-primary-light mx-1 d-flex justify-content-center align-items-center"><label class="pointer icon text-primary p-2"><i class="fal fa-edit"></i></label></div> </a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center">1</td>
+                                        <td class="text-left">สุปรียา</td>  
+                                        <td class="text-center">LP0001</td>   
+                                        <td class="text-center">ฝ่ายตรวจสอบเอกสาร</td>   
+                                        <td class="text-center">
+                                            <div class="w-100 d-flex justify-content-center">
+                                                <a href="#"><div class="pointer wpx-30 hpx-30 rounded bg-primary-light mx-1 d-flex justify-content-center align-items-center"><label class="pointer icon text-primary p-2"><i class="fal fa-edit"></i></label></div> </a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center">1</td>
+                                        <td class="text-left">สุปรียา</td>  
+                                        <td class="text-center">LP0002</td>   
+                                        <td class="text-center">ฝ่ายบัญชี</td>   
+                                        <td class="text-center">
+                                            <div class="w-100 d-flex justify-content-center">
+                                                <a href="#"><div class="pointer wpx-30 hpx-30 rounded bg-primary-light mx-1 d-flex justify-content-center align-items-center"><label class="pointer icon text-primary p-2"><i class="fal fa-edit"></i></label></div> </a>
+                                            </div>
+                                        </td>
+                                    </tr>     
+                                    <tr>
+                                        <td class="text-center">1</td>
+                                        <td class="text-left">สุปรียา</td>  
+                                        <td class="text-center">LP0002</td>   
+                                        <td class="text-center">ฝ่ายบัญชี</td>   
+                                        <td class="text-center">
                                             <div class="w-100 d-flex justify-content-center">
                                                 <a href="#"><div class="pointer wpx-30 hpx-30 rounded bg-primary-light mx-1 d-flex justify-content-center align-items-center"><label class="pointer icon text-primary p-2"><i class="fal fa-edit"></i></label></div> </a>
                                             </div>
@@ -423,12 +386,54 @@
                                     </tr>    
                                     <tr>
                                         <td class="text-center">2</td>
-                                        <td class="text-left">ลักซ์ แพลนเนท จำกัด </td> 
-                                        <td class="text-left">LUXA012024020001</td> 
-                                        <td class="text-left">แจ้งอยู่เกิน 90 วัน + ต่อ Work</td>  
-                                        <td class="text-left">28/02/2567</td>  
-                                        <td class="text-left">อดิศร ศรีสุธรรม</td>    
-                                        <td class="text-center update">
+                                        <td class="text-left">สุปรียา</td>  
+                                        <td class="text-center">LP0003</td>   
+                                        <td class="text-center">ฝ่ายขาย</td>   
+                                        <td class="text-center">
+                                            <div class="w-100 d-flex justify-content-center">
+                                                <a href="#"><div class="pointer wpx-30 hpx-30 rounded bg-primary-light mx-1 d-flex justify-content-center align-items-center"><label class="pointer icon text-primary p-2"><i class="fal fa-edit"></i></label></div> </a>
+                                            </div>
+                                        </td>
+                                    </tr>       
+                                    <tr>
+                                        <td class="text-center">2</td>
+                                        <td class="text-left">สุปรียา</td>  
+                                        <td class="text-center">LP0003</td>   
+                                        <td class="text-center">ฝ่ายขาย</td>   
+                                        <td class="text-center">
+                                            <div class="w-100 d-flex justify-content-center">
+                                                <a href="#"><div class="pointer wpx-30 hpx-30 rounded bg-primary-light mx-1 d-flex justify-content-center align-items-center"><label class="pointer icon text-primary p-2"><i class="fal fa-edit"></i></label></div> </a>
+                                            </div>
+                                        </td>
+                                    </tr>    
+                                    <tr>
+                                        <td class="text-center">2</td>
+                                        <td class="text-left">สุปรียา</td>  
+                                        <td class="text-center">LP0003</td>   
+                                        <td class="text-center">ฝ่ายขาย</td>   
+                                        <td class="text-center">
+                                            <div class="w-100 d-flex justify-content-center">
+                                                <a href="#"><div class="pointer wpx-30 hpx-30 rounded bg-primary-light mx-1 d-flex justify-content-center align-items-center"><label class="pointer icon text-primary p-2"><i class="fal fa-edit"></i></label></div> </a>
+                                            </div>
+                                        </td>
+                                    </tr>    
+                                    <tr>
+                                        <td class="text-center">2</td>
+                                        <td class="text-left">สุปรียา</td>  
+                                        <td class="text-center">LP0003</td>   
+                                        <td class="text-center">ฝ่ายขาย</td>   
+                                        <td class="text-center">
+                                            <div class="w-100 d-flex justify-content-center">
+                                                <a href="#"><div class="pointer wpx-30 hpx-30 rounded bg-primary-light mx-1 d-flex justify-content-center align-items-center"><label class="pointer icon text-primary p-2"><i class="fal fa-edit"></i></label></div> </a>
+                                            </div>
+                                        </td>
+                                    </tr>    
+                                    <tr>
+                                        <td class="text-center">2</td>
+                                        <td class="text-left">อดิศร </td>  
+                                        <td class="text-center">LP0004</td>   
+                                        <td class="text-center">ฝ่ายดำเนิการเอกสาร (Messenger)</td>   
+                                        <td class="text-center">
                                             <div class="w-100 d-flex justify-content-center">
                                                 <a href="#"><div class="pointer wpx-30 hpx-30 rounded bg-primary-light mx-1 d-flex justify-content-center align-items-center"><label class="pointer icon text-primary p-2"><i class="fal fa-edit"></i></label></div> </a>
                                             </div>
@@ -436,43 +441,37 @@
                                     </tr>    
                                     <tr>
                                         <td class="text-center">3</td>
-                                        <td class="text-left">ลักซ์ แพลนเนท จำกัด </td> 
-                                        <td class="text-left">LUXA012024020001</td> 
-                                        <td class="text-left">แจ้งอยู่เกิน 90 วัน + VISA</td>  
-                                        <td class="text-left">28/02/2567</td>  
-                                        <td class="text-left">อดิศร ศรีสุธรรม</td>    
-                                        <td class="text-center update">
+                                        <td class="text-left">อดิศร </td>  
+                                        <td class="text-center">LP0005</td>   
+                                        <td class="text-center">ฝ่ายดำเนิการเอกสาร (Messenger)</td>   
+                                        <td class="text-center">
                                             <div class="w-100 d-flex justify-content-center">
                                                 <a href="#"><div class="pointer wpx-30 hpx-30 rounded bg-primary-light mx-1 d-flex justify-content-center align-items-center"><label class="pointer icon text-primary p-2"><i class="fal fa-edit"></i></label></div> </a>
                                             </div>
                                         </td>
-                                    </tr>    
+                                    </tr>     
                                     <tr>
                                         <td class="text-center">4</td>
-                                        <td class="text-left">ลักซ์ แพลนเนท จำกัด </td> 
-                                        <td class="text-left">LUXA012024020001</td> 
-                                        <td class="text-left">ต่อ Passport</td>  
-                                        <td class="text-left">28/02/2567</td>  
-                                        <td class="text-left">อดิศร ศรีสุธรรม</td>    
-                                        <td class="text-center update">
+                                        <td class="text-left">อดิศร </td>  
+                                        <td class="text-center">LP0006</td>   
+                                        <td class="text-center">ฝ่ายดำเนิการเอกสาร (Messenger)</td>   
+                                        <td class="text-center">
                                             <div class="w-100 d-flex justify-content-center">
                                                 <a href="#"><div class="pointer wpx-30 hpx-30 rounded bg-primary-light mx-1 d-flex justify-content-center align-items-center"><label class="pointer icon text-primary p-2"><i class="fal fa-edit"></i></label></div> </a>
                                             </div>
                                         </td>
-                                    </tr>    
+                                    </tr>     
                                     <tr>
-                                        <td class="text-center">5</td>
-                                        <td class="text-left">ลักซ์ แพลนเนท จำกัด </td> 
-                                        <td class="text-left">LUXA012024020001</td> 
-                                        <td class="text-left">ต่ออายุใบอนุญาตทำงาน 1 ปี และ 2 ปี</td>  
-                                        <td class="text-left">28/02/2567</td>  
-                                        <td class="text-left">อดิศร ศรีสุธรรม</td>    
-                                        <td class="text-center update">
+                                        <td class="text-center">4</td>
+                                        <td class="text-left">อดิศร </td>  
+                                        <td class="text-center">LP0006</td>   
+                                        <td class="text-center">ฝ่ายดำเนิการเอกสาร (Messenger)</td>   
+                                        <td class="text-center">
                                             <div class="w-100 d-flex justify-content-center">
                                                 <a href="#"><div class="pointer wpx-30 hpx-30 rounded bg-primary-light mx-1 d-flex justify-content-center align-items-center"><label class="pointer icon text-primary p-2"><i class="fal fa-edit"></i></label></div> </a>
                                             </div>
                                         </td>
-                                    </tr>    
+                                    </tr>     
                                 </tbody>
                             </table>
                         </div> 
@@ -493,19 +492,21 @@
 			$(this).addClass("active");
 		}); 
 
-        $('input[type=radio][name=yearRa]').change(function() {
-            if (this.value == '1') {
-                $(".ddd").removeClass("d-none");   
-                $(".ddd").addClass("d-flex");   
+        $('input[type=radio][name=homeowner]').change(function() { 
+            if (this.value == "1") {
+                $(".homeowner2").removeClass("d-flex");   
+                $(".homeowner2").addClass("d-none");   
+                $(".homeowner1").removeClass("d-none");   
+                $(".homeowner1").addClass("d-flex");   
             }
-            else if (this.value == '2') {
-                $(".ddd").removeClass("d-flex");   
-                $(".ddd").addClass("d-none");   
-            }
+            else if (this.value == "2") {
+                $(".homeowner1").removeClass("d-flex");   
+                $(".homeowner1").addClass("d-none");   
+                $(".homeowner2").removeClass("d-none");   
+                $(".homeowner2").addClass("d-flex");  
+            } 
         });
-
-
-
+        $(".tb-num td:nth-child(1)").each(function(i,v) {$(v).text(i + 1);});
     </script>
  
 </body>
